@@ -1,0 +1,324 @@
+<title>Wednesday Openings Reel</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,500;0,600;1,500&family=Figtree:wght@400;500;600&display=swap">
+<style>
+/* Layout: single reading column of production sections, prompt cards with copy buttons, publication block set apart at the end */
+:root {
+  --bg: #f7f3ec;
+  --surface: #fffdf9;
+  --fg: #2f2c29;
+  --muted: #6e6760;
+  --line: #e2d9cc;
+  --accent: #5d7a4f;   /* sage, echoes the logo green, desaturated */
+  --blush: #c98a93;
+  --chip: #ece4d7;
+  --display: "Cormorant Garamond", Georgia, "Times New Roman", serif;
+  --body: "Figtree", system-ui, -apple-system, "Segoe UI", sans-serif;
+}
+@media (prefers-color-scheme: dark) {
+  :root:not([data-theme="light"]) {
+    --bg: #1d1b19; --surface: #262320; --fg: #ece6dd; --muted: #a79e93;
+    --line: #3a3530; --accent: #9cb98b; --blush: #d8a0a8; --chip: #312d29; color-scheme: dark;
+  }
+}
+:root[data-theme="dark"] {
+  --bg: #1d1b19; --surface: #262320; --fg: #ece6dd; --muted: #a79e93;
+  --line: #3a3530; --accent: #9cb98b; --blush: #d8a0a8; --chip: #312d29; color-scheme: dark;
+}
+body { background: var(--bg); color: var(--fg); font-family: var(--body); font-size: 16px; line-height: 1.6; }
+.wrap { max-width: 860px; margin: 0 auto; padding-inline: 20px; padding-block: 40px 80px; display: grid; gap: 48px; }
+h1, h2, h3 { font-family: var(--display); font-weight: 600; text-wrap: balance; line-height: 1.15; margin: 0; }
+h1 { font-size: clamp(2.2rem, 6vw, 3.2rem); }
+h2 { font-size: 1.9rem; }
+h3 { font-size: 1.3rem; }
+p { margin: 0; max-width: 65ch; }
+.eyebrow { font-size: .75rem; letter-spacing: .14em; text-transform: uppercase; color: var(--muted); font-weight: 600; }
+section { display: grid; gap: 18px; min-width: 0; }
+header { display: grid; gap: 14px; }
+.meta { display: flex; flex-wrap: wrap; gap: 8px; }
+.chip { background: var(--chip); border-radius: 999px; padding: 4px 12px; font-size: .82rem; }
+.chip.status { background: var(--accent); color: var(--bg); font-weight: 600; }
+dl.facts { display: grid; grid-template-columns: minmax(130px, max-content) 1fr; gap: 6px 20px; margin: 0; }
+dl.facts dt { color: var(--muted); font-size: .9rem; }
+dl.facts dd { margin: 0; min-width: 0; }
+.table { overflow-x: auto; border: 1px solid var(--line); border-radius: 6px; }
+table { border-collapse: collapse; width: 100%; min-width: 640px; font-size: .9rem; }
+th, td { text-align: left; vertical-align: top; padding: 10px 12px; border-bottom: 1px solid var(--line); }
+th { font-size: .72rem; letter-spacing: .1em; text-transform: uppercase; color: var(--muted); background: var(--surface); }
+tr:last-child td { border-bottom: 0; }
+td.t { font-variant-numeric: tabular-nums; white-space: nowrap; }
+.ok { color: var(--accent); font-weight: 600; }
+.flag { color: var(--blush); font-weight: 600; }
+.scene { display: grid; gap: 12px; padding-block: 20px; border-top: 1px solid var(--line); }
+.scene-head { display: flex; flex-wrap: wrap; align-items: baseline; gap: 6px 14px; }
+.scene-head .t { font-variant-numeric: tabular-nums; color: var(--muted); font-size: .9rem; }
+.prompt { background: var(--surface); border: 1px solid var(--line); border-radius: 6px; display: grid; min-width: 0; }
+.prompt-bar { display: flex; justify-content: space-between; align-items: center; padding: 8px 12px; border-bottom: 1px solid var(--line); }
+.prompt pre { margin: 0; padding: 14px; white-space: pre-wrap; word-break: break-word; font-family: var(--body); font-size: .88rem; line-height: 1.55; }
+button.copy { font: inherit; font-size: .8rem; font-weight: 600; background: transparent; color: var(--accent); border: 1px solid var(--accent); border-radius: 999px; padding: 3px 12px; cursor: pointer; }
+button.copy:hover { background: var(--accent); color: var(--bg); }
+button.copy:focus-visible { outline: 2px solid var(--blush); outline-offset: 2px; }
+ul, ol { margin: 0; padding-left: 1.2em; display: grid; gap: 4px; }
+.textlist { font-family: var(--display); font-size: 1.15rem; }
+.publish { background: var(--surface); border: 2px solid var(--accent); border-radius: 8px; padding: 20px; display: grid; gap: 14px; }
+.publish pre { margin: 0; white-space: pre-wrap; word-break: break-word; font-family: var(--body); font-size: .95rem; }
+.note { color: var(--muted); font-size: .9rem; }
+@media (prefers-reduced-motion: reduce) { * { transition: none !important; } }
+</style>
+
+<div class="wrap">
+
+<header>
+  <span class="eyebrow">Content record · The Pure Escape · Zarina, RCRT</span>
+  <h1>IG — Available Appointments — Wednesday, October 7 — Oct 2026</h1>
+  <div class="meta">
+    <span class="chip status">Status: Package ready, awaiting production</span>
+    <span class="chip">Reel · ~34 s · 9:16 · 1080 × 1920</span>
+    <span class="chip">Pillar: Available appointments / Booking</span>
+  </div>
+  <dl class="facts">
+    <dt>Topic</dt><dd>Open appointments on Wednesday, October 7, 2026, with a visual tour of the five services</dd>
+    <dt>Content type</dt><dd>Instagram Reel (also usable as a Story on Tuesday, October 6)</dd>
+    <dt>Date</dt><dd>Publish Tuesday, October 6, 2026 · Appointments Wednesday, October 7, 2026</dd>
+    <dt>Primary goal</dt><dd>Fill three open slots; show the range of reflexology services to local viewers</dd>
+    <dt>Target audience</dt><dd>Adults in Winnipeg looking for a calm, professional treatment midweek; existing clients</dd>
+    <dt>Primary SEO keyword</dt><dd>Reflexology Winnipeg</dd>
+    <dt>Secondary keywords</dt><dd>Foot Reflexology · Hand Reflexology · Facial Reflexology · Bergman Method · Available Appointments · Corydon Ave</dd>
+    <dt>Local terms</dt><dd>Winnipeg · Corydon Ave · Winnipeg Reflexology</dd>
+  </dl>
+</header>
+
+<section>
+  <h2>Fact check</h2>
+  <div class="table"><table>
+    <thead><tr><th>Item</th><th>Value used</th><th>Result</th></tr></thead>
+    <tbody>
+      <tr><td>Date / weekday</td><td>Wednesday, October 7, 2026</td><td class="ok">Verified: October 7, 2026 is a Wednesday</td></tr>
+      <tr><td>Appointment times</td><td class="t">11:00 a.m. · 12:45 p.m. · 2:30 p.m.</td><td class="ok">Exactly as provided, consistent format</td></tr>
+      <tr><td>Therapist</td><td>Zarina, RCRT</td><td class="ok">As provided</td></tr>
+      <tr><td>Clinic / address</td><td>The Pure Escape · 698 Corydon Ave</td><td class="ok">Confirmed by owner</td></tr>
+      <tr><td>Logo</td><td>brand/the-pure-escape-logo.png</td><td class="ok">Official file, placed in editing, never AI-generated</td></tr>
+      <tr><td>Services</td><td>Five services from the official list</td><td class="ok">No services added; package contents not described</td></tr>
+      <tr><td>Facial Reflexology — Bergman Method</td><td>Light fingertip work on the brow line</td><td class="flag">Method developed by Ziggie Bergman. Zarina to confirm the visual looks like her technique</td></tr>
+      <tr><td>Spanish Massage</td><td>Palms gliding over the upper back</td><td class="ok">Consistent with quiromasaje hand techniques (gliding, kneading, friction)</td></tr>
+      <tr><td>Health claims</td><td>None</td><td class="ok">Caption describes availability and a calm hour only</td></tr>
+      <tr><td>"Tomorrow"</td><td>Not used in the Reel</td><td class="ok">Reel stays on the profile; the date does the job</td></tr>
+      <tr><td>Booking method</td><td>"Send us a DM to book"</td><td class="flag">Confirm DM booking, or replace with your link / phone</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section>
+  <h2>Hook and concept</h2>
+  <p><strong>Hook (0–3 s):</strong> a still life of pink peonies in soft morning light. The date and three open times appear one by one. The viewer has the key information within three seconds.</p>
+  <p><strong>Concept:</strong> the Reel opens and closes on the same peonies, like a pair of bookends. In between, each service gets one short, recognizable close-up of professional hands at work: foot, hand, face, back, and a prepared room for the package. Each cut adds something new, and the times return at the end for anyone who joined late.</p>
+  <p><strong>Why save, share or act:</strong> it gives local viewers a concrete, time-limited reason to book. It is easy to forward to a friend who needs a break. It also shows the full service range in one place.</p>
+</section>
+
+<section>
+  <h2>Storyboard</h2>
+  <p class="note">Continuity lock for every scene. Treatment room in ivory and warm beige with charcoal accents. Soft morning window light from camera left. The therapist wears a charcoal long-sleeve tunic and only her hands appear, with short natural nails and no rings. The client is an adult woman with her hair in an ivory cotton headband and an ivory blanket. Warm, soft colour grade with subtle grain. One ambient track runs throughout.</p>
+  <div class="table"><table>
+    <thead><tr><th>#</th><th>Time</th><th>Subject / action</th><th>Shot · angle · movement</th><th>On-screen text</th><th>Transition out</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td class="t">0.0–7.0</td><td>Pink peonies, ivory vase, folded linen towel, travertine ledge; petals barely sway</td><td>Medium still life, eye level · very slow push-in toward the open bloom</td><td>Date, AVAILABLE APPOINTMENTS, three times, therapist, clinic, address</td><td>Push into the petals, then a 0.5 s dissolve from petal to skin</td></tr>
+      <tr><td>2</td><td class="t">7.0–11.5</td><td>Foot Reflexology: thumb walking along the inner edge of the right sole</td><td>Side close-up · starts soft, racks to focus · slow lateral track</td><td>WEDNESDAY · OCTOBER 7 / Foot Reflexology</td><td>Match cut on the thumb's motion</td></tr>
+      <tr><td>3</td><td class="t">11.5–16.0</td><td>Hand Reflexology: thumb walking across the client's palm</td><td>Overhead close-up · static, slight push-in</td><td>WEDNESDAY · OCTOBER 7 / Hand Reflexology</td><td>Soft dissolve through warm light</td></tr>
+      <tr><td>4</td><td class="t">16.0–20.5</td><td>Facial Reflexology, Bergman Method: fingertips move gently along the brow line</td><td>Overhead three-quarter · very slow lateral drift</td><td>WEDNESDAY · OCTOBER 7 / Facial Reflexology / Bergman Method</td><td>Cut</td></tr>
+      <tr><td>5</td><td class="t">20.5–24.0</td><td>Spanish Massage: palms glide up the upper back</td><td>Side medium close-up · slow push-in</td><td>WEDNESDAY · OCTOBER 7 / Spanish Massage</td><td>Slow dissolve</td></tr>
+      <tr><td>6</td><td class="t">24.0–27.5</td><td>Ultimate Escape Package: prepared table, folded towels, one peony stem</td><td>Detail shot, slight high angle · slow push-in</td><td>WEDNESDAY · OCTOBER 7 / Ultimate Escape Package</td><td>Rack focus from the peony stem to the Scene 1 peonies</td></tr>
+      <tr><td>7</td><td class="t">27.5–34.0</td><td>Back to the peony still life; light drifts</td><td>Same set-up as Scene 1 · very slow pull-back</td><td>Date, three times, Zarina, RCRT, CTA, logo, address</td><td>Hold, then end</td></tr>
+    </tbody>
+  </table></div>
+</section>
+
+<section id="prompts">
+  <h2>Image and video prompts</h2>
+  <p class="note">Generate each still image first, then animate it with its video prompt. Generate 5–10 s clips and trim them to the timings above. Never ask the generator for text or the logo.</p>
+
+  <div class="scene">
+    <div class="scene-head"><h3>Scene 1 · Pink peony opening</h3><span class="t">0.0–7.0 s</span></div>
+    <div class="prompt"><div class="prompt-bar"><span class="eyebrow">Image prompt</span><button class="copy" type="button">Copy</button></div><pre>Photorealistic premium editorial still life for a boutique wellness clinic, vertical 9:16, 1080×1920.
+Composition: a low, hand-thrown matte ivory ceramic vase with four fresh pink peonies placed in the LOWER-LEFT corner of the frame, partly cropped by the left and bottom edges. One peony fully open (soft blush-pink, layered ruffled petals, natural imperfections), one half-open, one closed bud, plus a few natural dark-green peony leaves. Beside the vase, a neatly folded ivory linen towel with soft natural creases. Vase and towel stand on a warm cream travertine ledge.
+Background: a smooth warm-ivory plaster wall filling the upper two-thirds of the frame, completely clean and uncluttered, calm negative space reserved for typography. Soft natural morning window light from the LEFT, diffused through a sheer linen curtain, casting a faint soft-edged shadow pattern across the wall.
+Palette: ivory, warm beige, cream travertine, soft blush pink as the only accent. Not overly pink.
+Photography: full-frame camera, 85mm lens, shallow depth of field, peonies in crisp focus, wall softly falling off, realistic soft shadows, natural colour, subtle film grain, high-end editorial wellness photography. Mood: calm, quiet, sophisticated, airy.
+No text, letters, numbers or logos. No people, no hands, no candles, no stones, no scattered petals, no excessive gold, no glossy plastic-looking flowers, no oversaturated pink, no clutter.</pre></div>
+    <div class="prompt"><div class="prompt-bar"><span class="eyebrow">Video prompt</span><button class="copy" type="button">Copy</button></div><pre>Animate this exact image as a subtle luxury wellness commercial shot. Keep the composition, colours, flowers, vase, towel and wall exactly as they are.
+Camera: a very slow, smooth, steady dolly push-in toward the fully open pink peony in the lower-left of the frame, about 8–10% over the clip. No shake, no tilt, no fast zoom.
+Motion: petals and leaves move almost imperceptibly, as if touched by a gentle indoor air current. The soft window light from the left drifts very slowly across the petals and the wall.
+Final second: the camera continues gently toward the open peony so its soft blush petals fill more of the frame.
+Style: photorealistic, natural, calm, premium, cinematic 24 fps, real-camera feel.
+Do not add: text, letters, numbers, people, hands, new objects, falling or flying petals, blooming time-lapse, sparkles, glow, fantasy effects, colour shifts, fast motion.</pre></div>
+  </div>
+
+  <div class="scene">
+    <div class="scene-head"><h3>Scene 2 · Foot Reflexology</h3><span class="t">7.0–11.5 s</span></div>
+    <div class="prompt"><div class="prompt-bar"><span class="eyebrow">Image prompt</span><button class="copy" type="button">Copy</button></div><pre>Photorealistic premium editorial photograph, vertical 9:16, 1080×1920, professional foot reflexology session.
+Side close-up of a client's bare right foot resting on a folded ivory towel over a bolster on a treatment table; the client's legs are covered by an ivory blanket. A reflexologist in a charcoal long-sleeve tunic works on the foot: her left hand supports the top of the foot; her right thumb, bent at the first joint, rests on the inner edge of the sole at the arch, with her other fingers lightly wrapped over the top of the foot. Place the hands and foot in the upper and middle part of the frame; keep the lower third calm, soft and out of focus for text.
+Lighting: soft natural morning window light from the LEFT, warm ivory and beige palette with charcoal accents, shallow depth of field, 85mm look, natural skin texture, subtle film grain. Mood: calm, precise, professional, credible.
+Anatomy: anatomically correct human foot with exactly five toes and natural proportions; anatomically correct hands with exactly five fingers each, natural knuckles and joint bending, short clean natural nails, no rings.
+No text, letters, numbers or logos. No extra or missing fingers or toes, no merged digits, no duplicated hands or feet, no distorted ankles. No oil shine, candles, stones, petals or spa clutter.</pre></div>
+    <div class="prompt"><div class="prompt-bar"><span class="eyebrow">Video prompt</span><button class="copy" type="button">Copy</button></div><pre>Animate this exact image. Keep the foot, hands, wardrobe, light and colours exactly as they are.
+Start slightly out of focus and rack smoothly to sharp focus within the first second.
+Action: the therapist's right thumb moves forward in small, slow inching steps along the inner edge of the sole toward the big toe, a controlled professional reflexology thumb-walking technique. Her left hand stays still, supporting the foot. The client's foot stays relaxed and still.
+Camera: very slow lateral track following the thumb. No shake, no zoom.
+Style: photorealistic, natural motion, cinematic 24 fps, real-camera feel.
+Do not add: text, extra hands, extra fingers or toes, rubbing or kneading, oil, sudden movement, effects.</pre></div>
+  </div>
+
+  <div class="scene">
+    <div class="scene-head"><h3>Scene 3 · Hand Reflexology</h3><span class="t">11.5–16.0 s</span></div>
+    <div class="prompt"><div class="prompt-bar"><span class="eyebrow">Image prompt</span><button class="copy" type="button">Copy</button></div><pre>Photorealistic premium editorial photograph, vertical 9:16, 1080×1920, professional hand reflexology session.
+Overhead top-down close-up of a client's left hand resting palm-up on a folded ivory towel on a small cushion, the client's ivory blanket visible at the edge. A reflexologist in a charcoal long-sleeve tunic cradles the client's hand with both of her hands: her fingers support the back of the client's hand from beneath, and both of her thumbs rest on the client's palm, the right thumb bent at the first joint in the centre of the palm. Place the hands in the upper and middle part of the frame; keep the lower third calm and softly out of focus for text.
+Lighting: soft natural morning window light from the LEFT, warm ivory and beige palette with charcoal accents, shallow depth of field, natural skin texture, subtle film grain. Mood: calm, precise, professional.
+Anatomy: exactly three hands in frame (one client hand, two therapist hands), each with exactly five fingers, natural knuckles, natural joint bending, short clean natural nails, no rings.
+No text, letters, numbers or logos. No extra, missing or merged fingers, no duplicated hands, no distorted wrists. No oil, candles, stones, petals or spa clutter.</pre></div>
+    <div class="prompt"><div class="prompt-bar"><span class="eyebrow">Video prompt</span><button class="copy" type="button">Copy</button></div><pre>Animate this exact image. Keep all three hands, wardrobe, light and colours exactly as they are.
+Action: the therapist's right thumb moves in small, slow inching steps across the client's palm, from the base of the palm toward the base of the fingers, a controlled reflexology thumb-walking technique. All other fingers stay still and supportive. The client's hand stays relaxed.
+Camera: static overhead with a very slight, slow push-in.
+Style: photorealistic, natural motion, cinematic 24 fps.
+Do not add: text, extra hands or fingers, squeezing, rubbing, oil, sudden movement, effects.</pre></div>
+  </div>
+
+  <div class="scene">
+    <div class="scene-head"><h3>Scene 4 · Facial Reflexology, Bergman Method</h3><span class="t">16.0–20.5 s</span></div>
+    <div class="prompt"><div class="prompt-bar"><span class="eyebrow">Image prompt</span><button class="copy" type="button">Copy</button></div><pre>Photorealistic premium editorial photograph, vertical 9:16, 1080×1920, professional facial reflexology session.
+Overhead three-quarter view of an adult woman in her thirties lying on her back on a treatment table, eyes closed, face fully relaxed, natural skin with no visible makeup, hair wrapped in an ivory cotton headband, an ivory blanket at her shoulders. A reflexologist in a charcoal long-sleeve tunic stands at the head of the table; the fingertips of both of her hands rest lightly and symmetrically on the client's forehead just above the eyebrows. Place the face and hands in the upper and middle part of the frame; keep the lower third calm and softly out of focus for text.
+Lighting: soft natural morning window light from the LEFT, warm ivory and beige palette with charcoal accents, shallow depth of field, natural skin texture, subtle film grain. Mood: calm, gentle, precise, premium. Reflexology, not a beauty facial.
+Anatomy: natural facial proportions, anatomically correct hands with exactly five fingers each, natural joint bending, short clean natural nails, no rings.
+No text, letters, numbers or logos. No skincare products, creams, oil, masks, tools, jade rollers or gua sha. No extra or merged fingers, no distorted face, no artificial AI-smooth skin.</pre></div>
+    <div class="prompt"><div class="prompt-bar"><span class="eyebrow">Video prompt</span><button class="copy" type="button">Copy</button></div><pre>Animate this exact image. Keep the client's face, the hands, wardrobe, light and colours exactly as they are.
+Action: the therapist's fingertips move slowly and gently outward along the brow line toward the temples with a light, precise touch, then pause. The client remains still with one slow, natural breath.
+Camera: very slow lateral drift. No zoom.
+Style: photorealistic, natural motion, cinematic 24 fps.
+Do not add: text, products, oil, tools, extra fingers, changes to the face, sudden movement, effects.</pre></div>
+  </div>
+
+  <div class="scene">
+    <div class="scene-head"><h3>Scene 5 · Spanish Massage</h3><span class="t">20.5–24.0 s</span></div>
+    <div class="prompt"><div class="prompt-bar"><span class="eyebrow">Image prompt</span><button class="copy" type="button">Copy</button></div><pre>Photorealistic premium editorial photograph, vertical 9:16, 1080×1920, professional massage session.
+Side medium close-up of the same adult woman lying face-down on a treatment table, hair in an ivory cotton headband, an ivory towel draped neatly from her lower back down; upper back and shoulders bare. A therapist in a charcoal long-sleeve tunic places both hands flat on the client's upper back, one on each side of the spine, just below the shoulder blades. Place the hands and back in the upper and middle part of the frame; keep the lower third calm and softly out of focus for text.
+Lighting: soft natural morning window light from the LEFT, warm ivory and beige palette with charcoal accents, shallow depth of field, natural skin texture, subtle film grain. Mood: calm, professional, tasteful.
+Anatomy: anatomically correct back and shoulders; hands with exactly five fingers each, natural joint bending, short clean natural nails, no rings.
+No text, letters, numbers or logos. No oil shine, candles, stones, petals or spa clutter. No extra or merged fingers, no duplicated hands, no distorted shoulders.</pre></div>
+    <div class="prompt"><div class="prompt-bar"><span class="eyebrow">Video prompt</span><button class="copy" type="button">Copy</button></div><pre>Animate this exact image. Keep the client, the hands, the towel draping, light and colours exactly as they are.
+Action: both of the therapist's palms glide slowly and smoothly upward toward the shoulders with even, controlled pressure, then pause. The client stays relaxed and still.
+Camera: slow push-in.
+Style: photorealistic, natural motion, cinematic 24 fps.
+Do not add: text, oil shine, extra hands or fingers, towel movement, sudden movement, effects.</pre></div>
+  </div>
+
+  <div class="scene">
+    <div class="scene-head"><h3>Scene 6 · Ultimate Escape Package</h3><span class="t">24.0–27.5 s</span></div>
+    <div class="prompt"><div class="prompt-bar"><span class="eyebrow">Image prompt</span><button class="copy" type="button">Copy</button></div><pre>Photorealistic premium editorial photograph, vertical 9:16, 1080×1920, detail of a prepared boutique treatment room.
+A treatment table dressed in crisp ivory linens; at its head, a neat stack of three folded ivory towels, with a single fresh pink peony stem laid across the top towel. In the softly blurred background, a charcoal cabinet and a warm-ivory wall. Place the towels and peony in the upper and middle part of the frame; keep the lower third calm and softly out of focus for text.
+Lighting: soft natural morning window light from the LEFT, warm ivory and beige palette with charcoal accents and a soft blush-pink accent, shallow depth of field, subtle film grain. Mood: quiet, prepared, premium, inviting.
+No people. No text, letters, numbers or logos. No candles, stones, scattered petals, bottles, excessive gold or clutter.</pre></div>
+    <div class="prompt"><div class="prompt-bar"><span class="eyebrow">Video prompt</span><button class="copy" type="button">Copy</button></div><pre>Animate this exact image. Keep the table, towels, peony, light and colours exactly as they are.
+Camera: very slow, steady push-in toward the peony on the towels.
+Motion: the window light drifts very slowly across the linens; the peony petals barely move. Nothing else moves.
+Style: photorealistic, calm, cinematic 24 fps.
+Do not add: people, text, new objects, falling petals, effects.</pre></div>
+  </div>
+
+  <div class="scene">
+    <div class="scene-head"><h3>Scene 7 · Closing on the peonies</h3><span class="t">27.5–34.0 s</span></div>
+    <p class="note">Reuse the Scene 1 image so the opening and closing match exactly. Animate it again with this prompt.</p>
+    <div class="prompt"><div class="prompt-bar"><span class="eyebrow">Video prompt</span><button class="copy" type="button">Copy</button></div><pre>Animate this exact image as a subtle luxury wellness commercial closing shot. Keep the composition, colours, flowers, vase, towel and wall exactly as they are.
+Camera: a very slow, smooth dolly pull-back (moving away from the peonies), about 6–8% over the clip, revealing a little more of the clean ivory wall. No shake, no fast zoom.
+Motion: petals and leaves barely move, as if touched by a gentle indoor air current. Soft window light from the left drifts almost imperceptibly across the wall.
+Style: photorealistic, calm, premium, cinematic 24 fps.
+Do not add: text, people, new objects, falling petals, glow, effects.</pre></div>
+  </div>
+</section>
+
+<section>
+  <h2>On-screen text and timing</h2>
+  <p class="note">Add all text in editing. Use a serif such as Cormorant Garamond for the date, times and service names, and a tracked uppercase sans such as Montserrat or Jost for the labels. Set the text in charcoal and keep it inside the safe zone (y 300–1300 px, at least 120 px from the right edge).</p>
+  <div class="table"><table>
+    <thead><tr><th>Scene</th><th>Text, exactly as written</th><th>In</th><th>Out</th></tr></thead>
+    <tbody>
+      <tr><td>1</td><td>WEDNESDAY / OCTOBER 7</td><td class="t">0.6 s</td><td class="t">6.0 s</td></tr>
+      <tr><td>1</td><td>(thin gold line)</td><td class="t">1.2 s</td><td class="t">6.0 s</td></tr>
+      <tr><td>1</td><td>AVAILABLE APPOINTMENTS</td><td class="t">1.4 s</td><td class="t">6.0 s</td></tr>
+      <tr><td>1</td><td>11:00 a.m. / 12:45 p.m. / 2:30 p.m.</td><td class="t">2.2 / 2.5 / 2.8 s</td><td class="t">6.0 s</td></tr>
+      <tr><td>1</td><td>Zarina, RCRT / The Pure Escape / 698 Corydon Ave</td><td class="t">3.4 s</td><td class="t">6.0 s</td></tr>
+      <tr><td>2</td><td>WEDNESDAY · OCTOBER 7 / Foot Reflexology</td><td class="t">7.8 s</td><td class="t">11.2 s</td></tr>
+      <tr><td>3</td><td>WEDNESDAY · OCTOBER 7 / Hand Reflexology</td><td class="t">11.8 s</td><td class="t">15.7 s</td></tr>
+      <tr><td>4</td><td>WEDNESDAY · OCTOBER 7 / Facial Reflexology / Bergman Method</td><td class="t">16.3 s</td><td class="t">20.2 s</td></tr>
+      <tr><td>5</td><td>WEDNESDAY · OCTOBER 7 / Spanish Massage</td><td class="t">20.8 s</td><td class="t">23.7 s</td></tr>
+      <tr><td>6</td><td>WEDNESDAY · OCTOBER 7 / Ultimate Escape Package</td><td class="t">24.3 s</td><td class="t">27.2 s</td></tr>
+      <tr><td>7</td><td>WEDNESDAY · OCTOBER 7</td><td class="t">28.0 s</td><td class="t">end</td></tr>
+      <tr><td>7</td><td>11:00 a.m. / 12:45 p.m. / 2:30 p.m.</td><td class="t">28.4 s</td><td class="t">end</td></tr>
+      <tr><td>7</td><td>Zarina, RCRT / Send us a DM to book</td><td class="t">29.2 s</td><td class="t">end</td></tr>
+      <tr><td>7</td><td>[official logo] / 698 Corydon Ave</td><td class="t">29.8 s</td><td class="t">end</td></tr>
+    </tbody>
+  </table></div>
+  <p class="note">In scenes 2–6, the small date label (34 px, tracked caps) sits above the service name (serif, 76 px). Put a very soft ivory gradient behind both. In Scene 7, place the logo about 560 px wide on clean ivory. Do not recolour or redraw it.</p>
+</section>
+
+<section>
+  <h2>Audio</h2>
+  <p>Use one soft ambient piano or pad track at low volume throughout. Pick a licensed track from Instagram's library. Add a single gentle chime when AVAILABLE APPOINTMENTS appears (1.4 s) and again when the times return (28.4 s). Keep foley subtle in the hands-on scenes. No voiceover, because the Reel works with the sound off.</p>
+</section>
+
+<section>
+  <h2>Cover and title</h2>
+  <dl class="facts">
+    <dt>Cover image</dt><dd>A frame from Scene 1 before the text appears</dd>
+    <dt>Cover text</dt><dd><span class="textlist">AVAILABLE APPOINTMENTS · Wednesday, October 7</span></dd>
+    <dt>Reel title</dt><dd>Available Appointments: Wednesday, October 7 | Reflexology in Winnipeg</dd>
+    <dt>Alt text</dt><dd>Pink peonies in an ivory ceramic vase beside a folded linen towel, followed by close-ups of a therapist's hands during foot, hand and facial reflexology and a back massage. Text lists available appointments with Zarina, RCRT, at The Pure Escape, 698 Corydon Ave, on Wednesday, October 7, at 11:00 a.m., 12:45 p.m. and 2:30 p.m.</dd>
+    <dt>Location tag</dt><dd>The Pure Escape (or Winnipeg, Manitoba)</dd>
+    <dt>CTA</dt><dd>Book, by DM. One CTA only.</dd>
+  </dl>
+</section>
+
+<section class="publish" id="copy">
+  <div class="prompt-bar" style="padding:0;border:0"><h2>COPY &amp; PASTE — INSTAGRAM</h2><button class="copy" type="button">Copy</button></div>
+<pre>Three appointments are open this Wednesday, October 7, with Zarina, RCRT, at The Pure Escape on Corydon Ave in Winnipeg.
+
+11:00 a.m.
+12:45 p.m.
+2:30 p.m.
+
+Choose Foot Reflexology, Hand Reflexology, Facial Reflexology (Bergman Method), Spanish Massage or the Ultimate Escape Package. Each one is a calm, focused hour in the middle of your week.
+
+Send us a DM to book your time.
+
+📍 The Pure Escape, 698 Corydon Ave, Winnipeg
+
+#ReflexologyWinnipeg #WinnipegReflexology #FootReflexology #HandReflexology #FacialReflexology #Winnipeg</pre>
+</section>
+
+<section>
+  <h2>Open questions</h2>
+  <ul>
+    <li>Do clients book by DM? If not, send the link or phone number and the CTA will be updated.</li>
+    <li>Zarina to confirm that the Scene 4 fingertip movement looks like her Bergman Method work.</li>
+    <li>Is each service about an hour? The caption says "a calm, focused hour". If session lengths differ, it will change to "a calm, focused break".</li>
+  </ul>
+</section>
+
+</div>
+
+<script>
+document.querySelectorAll('button.copy').forEach(function (btn) {
+  btn.addEventListener('click', function () {
+    var box = btn.closest('.prompt, .publish');
+    var pre = box && box.querySelector('pre');
+    if (!pre) return;
+    var text = pre.innerText;
+    var done = function () { btn.textContent = 'Copied'; setTimeout(function () { btn.textContent = 'Copy'; }, 1600); };
+    var fallback = function () {
+      var r = document.createRange(); r.selectNodeContents(pre);
+      var s = window.getSelection(); s.removeAllRanges(); s.addRange(r);
+      btn.textContent = 'Selected, press Ctrl+C';
+    };
+    try {
+      navigator.clipboard.writeText(text).then(done, fallback);
+    } catch (e) { fallback(); }
+  });
+});
+</script>
