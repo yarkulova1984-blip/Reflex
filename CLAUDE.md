@@ -23,7 +23,7 @@ These four areas remain the central focus of: Instagram Reels, Instagram Stories
 ## 2. Language
 
 - All final public-facing content must be in professional, natural **ENGLISH** unless another language is specifically requested.
-- The owner may communicate in Russian. Explanations to the owner may be in Russian when appropriate.
+- **Always communicate with the owner in RUSSIAN** (explanations, questions, research summaries, fact-check notes, options to choose from). Only the final public-facing content itself stays in English.
 - Final Reels, Shorts, captions, titles, on-screen text, appointment graphics, advertisements, and video prompts are in English unless requested otherwise.
 - Use natural **Canadian/North American English**. Avoid awkward AI-generated wording.
 
