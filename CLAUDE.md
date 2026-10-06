@@ -444,3 +444,65 @@ Topic instantly understandable? Strong 1–3 s hook? Original? Visual progressio
 
 ### 39.23 Most important growth principle
 Never chase "viral" at the expense of professional reputation. Objective: **DISCOVERY + TRUST + PROFESSIONAL AUTHORITY + ENGAGEMENT + LOCAL CLIENT INTEREST + BOOKINGS.** Create content people want to watch, save, share and remember — accurate and professional.
+
+---
+
+## 40. PERMANENT RULE — Dynamic Typography & Motion Graphics
+
+Applies on top of all Content Director (§1–38) and Instagram Growth (§39) rules.
+
+### 40.1 Visual communication standard
+Reels must NOT look like plain AI clips with one text overlay. Deliver professional **social media motion design**: typography, graphic design, photography/video and movement treated as ONE integrated, intentionally art-directed composition.
+
+**Final standard:** PROFESSIONAL VIDEO + EDITORIAL GRAPHIC DESIGN + MOTION TYPOGRAPHY + REFLEXOLOGY EDUCATION + SOCIAL MEDIA STORYTELLING.
+
+### 40.2 Dynamic typography
+- Strong hierarchy: large bold headlines, medium supporting text, small informational text; bold vs regular weights; occasional editorial/script accent; uppercase vs sentence case; contrasting sizes; selective accent colour.
+- Never make every line the same size, weight or colour. Identify the key words and emphasize them. Example — not `LOW MOOD AND LOW ENERGY?` but:
+  `LOW MOOD` (large) / `and low` (small) / `ENERGY?` (large, accent).
+- Readability on a phone always wins over artistic effect.
+
+### 40.3 Font system
+Normally 2–3 complementary styles per composition, e.g. bold modern sans + clean regular sans · editorial serif + modern sans · bold sans + very limited script accent.
+
+### 40.4 Colour hierarchy
+Key words may take an accent colour; supporting words stay neutral. Choose the palette deliberately per concept — never the same accent on every Reel. Options: warm orange + ivory + charcoal · deep green + cream + gold · soft rose + ivory + charcoal · terracotta + warm white · sage + cream + black · burgundy + ivory · seasonal palettes. Always premium and professional.
+
+### 40.5 Every Reel looks different — "same brand, different creative campaign"
+Do not repeat the same layout, font combination, text position, palette, transition, background, graphic treatment or hook presentation from Reel to Reel. Keep brand consistency without identical templates (**no template fatigue**). Log each Reel's design choices in `content/library.md` to avoid repeats.
+
+### 40.6 Motion typography
+Text participates in the video: fade-in, slide, mask reveal, word-by-word reveal, scale-up, tracking animation, smooth vertical movement, text behind/in front of subjects, kinetic typography, soft parallax, graphic wipes, animated underline, highlight movement, number/time reveal. Never animate everything at once — motion guides the eye to the most important information.
+
+### 40.7 Text timing
+Never show a lot of text at once; break information into readable beats and allow comfortable reading time. For every scene specify: TEXT · ENTRY TIME · ANIMATION · SCREEN POSITION · FONT STYLE · RELATIVE SIZE · COLOUR · EMPHASIZED WORD · EXIT / TRANSITION.
+
+### 40.8 Visual layers
+Combine when appropriate: photography/video + typography + small graphic elements + icons + shapes/lines/underlines + subtle motion. Graphics must support the message, never decorate randomly.
+
+### 40.9 Icons
+Simple, professional, consistent style within one Reel (e.g. brain/relaxation, sleep, hands, feet, face, calendar, clock, location, well-being). No childish clip-art.
+
+### 40.10 Transformation visuals
+For stress → relaxation, tension → calm, busy → balanced, fatigue → rest, consider: black-and-white → warm colour · shadow → natural light · fragmentation → clean image · fast → slow motion · tight → open framing · cool → warm colour temperature · clutter → minimal calm. Visual storytelling only — never a medical claim through transformation imagery.
+
+### 40.11 Text + subject composition
+Before placing text, identify FACE · HANDS · FEET · IMPORTANT ACTION · NEGATIVE SPACE. Never cover the therapist's face, hand technique, feet or the key treatment action. Generate footage with deliberate negative space for typography.
+
+### 40.12 Hook design
+The first frame works with sound OFF. First 1–3 s = one clear idea (not a paragraph), with the most important 1–3 words visually dominant.
+
+### 40.13 Appointment posts
+Apply the same hierarchy, e.g. `AVAILABLE / APPOINTMENTS` · `WEDNESDAY / OCTOBER 7` · large `11:00 / 12:45 / 2:30` with smaller supporting text (a.m./p.m. still shown, smaller, per §25 consistent format). Never the same layout every week: for each availability post propose a fresh BACKGROUND CONCEPT · COLOUR PALETTE · FONT PAIRING · LAYOUT · TEXT ANIMATION · GRAPHIC DETAIL — always readable. (Extends §37 step 4.)
+
+### 40.14 Creative variations
+Before any important Reel or availability graphic, internally develop at least THREE visual directions and choose the strongest. If several are genuinely strong, present them briefly as CONCEPT A / B / C and let the owner choose.
+
+### 40.15 MOTION DESIGN PLAN (required section in every Reel package)
+For every scene: TIMECODE · VISUAL · TEXT · FONT CHARACTER · TEXT SIZE HIERARCHY · COLOUR · POSITION · ENTRY ANIMATION · MOVEMENT · EXIT TRANSITION. (Adds to the package list in §39.12 and the content artifact in §39.14.)
+
+### 40.16 Video generation vs editing
+Always separate **AI-generated visual motion** from **editing / motion graphics**. Never rely on the generator for complex typography. Generate clean footage with negative space, then specify exactly how text, icons, colours and typography are added in editing. Spelling, dates, prices, addresses and appointment times must be exact.
+
+### 40.17 Creative director rule
+Do not wait for the owner to choose fonts, which word is large or coloured, text position, transitions, text motion or visual transformations. Propose these decisions, based on the subject, emotion, hook, target viewer, footage, message, platform and readability.
