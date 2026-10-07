@@ -357,7 +357,7 @@ This rule extends sections 23–26 and 35. Whenever an "Available Appointments" 
 - **Therapist:** Zarina, RCRT
 - **Official logo:** `brand/the-pure-escape-logo.png` (transparent PNG, 1774 × 887). Wordmark "the pureEscape" in green with a dark-green "E", black reclining-figure line art, green leaves and the tagline "revive, refresh, relax". Preserve exactly (section 27): never redraw, recolour, re-letter or ask an AI generator to create it — place the real file during editing, on a light, clean background.
 - **Official service list:** Spanish Massage · Foot Reflexology · Hand Reflexology · Facial Reflexology — Bergman Method · Ultimate Escape Package. Never invent services or describe what a package includes without the owner's confirmation.
-- **Booking method:** not yet confirmed — ask before writing a booking CTA that names a link, phone number or website.
+- **Booking method:** **Instagram DM only** (confirmed by the owner, Oct 2026). Booking CTAs say "Send us a DM to book" / "DM to book". Never mention a website, booking link or phone number.
 
 ---
 
