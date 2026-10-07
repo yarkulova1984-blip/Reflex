@@ -569,3 +569,13 @@ When possible create/use ambient sound, subtle sound design, music, voiceover, t
 - Keep ONE permanent content hub artifact — **"Pure Escape Content Studio"**: https://claude.ai/artifact/GJx9hHNUJbMKPCA3hqrZz3 (source: `content/studio.html`). **Update this same artifact every time** (republish to the same URL); never scatter projects across new artifacts.
 - The Studio has a **project selector** so the owner can switch between projects (each Reel / post = one project). New projects are added to the selector; older ones stay available.
 - Rendered videos are stored in `content/videos/`, embedded in the Studio for preview, and sent to the owner as downloadable files.
+
+---
+
+## 43. PERMANENT RULE — Availability videos: services, live backgrounds, urgency hook (owner feedback, Oct 2026)
+
+1. **Always show the services in the video itself** (not only in the caption) — exactly the services the owner gives for that day. If none are specified, ask (§37). For Thursday, October 8, 2026 the owner confirmed **all five services** are available.
+2. **Backgrounds must look like a living photo/video, not a heavy blur.** Keep the main subject (e.g. flowers) recognizably in focus with only light depth-of-field; add real motion — flowers and grasses swaying in the wind, drifting light, moving clouds. Example the owner likes: **a poppy field with wheat ears moving in the wind.** Use the flower/scene the owner requests; when nothing is specified, choose something fresh.
+3. **Hook = a direct question that pushes to book.** In the first 1–3 seconds the viewer must read and understand a question aimed at them, e.g. "What are you waiting for?", followed by honest urgency ("Only 2 evening times open", "Book before it's gone"). Urgency must stay truthful — base it only on the real number of open slots; never invent "almost full" claims.
+4. **Retention + booking drive in every video:** hook question → urgency → date & times → services → strong booking CTA ("Don't wait — book now"). One clear CTA.
+5. **Something new every time** — new background, palette, fonts, layout, motion and hook wording (log in `content/library.md`).
