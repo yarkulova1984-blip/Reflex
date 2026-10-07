@@ -363,6 +363,7 @@ This rule extends sections 23–26 and 35. Whenever an "Available Appointments" 
 | **Advanced Massage Therapy** | 2020 Corydon Ave, Winnipeg, Manitoba | `brand/locations/advanced-massage-therapy-logo.png` (transparent PNG, 1672 × 941; white serif "ADVANCED" with silver bevel, "MASSAGE THERAPY" beneath between two lines, teal 3D triquetra/trinity knot behind) | Spanish Massage · Foot Reflexology · Hand Reflexology · Facial Reflexology · Bamboo Massage (massage with bamboo sticks) — confirmed by the owner Oct 2026. Public names "Bamboo Massage" and whether Facial Reflexology here is also the Bergman Method: pending owner confirmation |
 
 - Logos: preserve exactly (§27). Never redraw, recolour, re-letter, approximate or ask an AI generator to create them — place the real file during editing. The Pure Escape logo needs a light, clean background; the Advanced Massage Therapy logo (white lettering + teal knot) needs a dark or mid-tone background for its white text to stay readable.
+- **No plates, boxes or badges behind logos** (owner request, Oct 2026): place the transparent logo file directly on the scene. If contrast is needed (e.g. The Pure Escape's black line art on a dark scene), use only a soft, edgeless light glow (or soft shadow) behind it — never a visible shape — and never recolour the logo. If the owner supplies a light/white logo version, use it on dark scenes.
 - Never invent services for a location or describe what a package includes without the owner's confirmation.
 - The owner may add more locations later — add them to this table.
 

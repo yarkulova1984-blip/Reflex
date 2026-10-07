@@ -345,10 +345,18 @@ def frame_at(t, A):
         vgrad(f, 0, H, 0.62, 0.62, p0)
         lg = A["logo"]
         pw, ph = lg.width + 90, lg.height + 60
-        plaque = Image.new("RGBA", (pw * 2, ph * 2), (0, 0, 0, 0))
-        ImageDraw.Draw(plaque).rounded_rectangle((0, 0, pw * 2 - 1, ph * 2 - 1), 56, fill=IVORY + (240,))
         py = 250 + 24 * (1 - p0)
-        put(f, plaque.resize((pw, ph), Image.LANCZOS), (W - pw) / 2, py, p0)
+        # no plate or box: the logo sits on the scene; a soft, edgeless warm light behind it keeps the
+        # logo's black line art and dark-green "E" readable without recolouring the logo (owner request)
+        if "glow" not in A:
+            gw, gh = lg.width + 420, lg.height + 360
+            gm = Image.new("L", (gw, gh), 0)
+            ImageDraw.Draw(gm).ellipse((170, 150, gw - 170, gh - 150), fill=205)
+            glow = Image.new("RGBA", (gw, gh), (246, 236, 220, 0))
+            glow.putalpha(gm.filter(ImageFilter.GaussianBlur(85)))
+            A["glow"] = glow
+        g = A["glow"]
+        put(f, g, (W - g.width) / 2, py + 30 + lg.height / 2 - g.height / 2, p0)
         put(f, lg, (W - lg.width) / 2, py + 30, p0)
         y = py + ph + 80
         p = ease_out(prog(t, 38.7, 0.5))
