@@ -506,3 +506,66 @@ Always separate **AI-generated visual motion** from **editing / motion graphics*
 
 ### 40.17 Creative director rule
 Do not wait for the owner to choose fonts, which word is large or coloured, text position, transitions, text motion or visual transformations. Propose these decisions, based on the subject, emotion, hook, target viewer, footage, message, platform and readability.
+
+---
+
+## 41. PERMANENT RULE — Complete Video Production & Export
+
+Applies on top of §1–40.
+
+### 41.1 Primary requirement
+"Create a Reel" / "Create a video" means a **finished, downloadable vertical video**, not just a concept, storyboard, prompts or sample code — whenever the environment genuinely supports generation/rendering/export. Take every project as far as the available tools allow; never stop at planning when production is possible. The code is a means; the **finished video** is the deliverable.
+
+### 41.2 Two production modes
+- **Mode A — Reflexology Reels:** 30–60 s (choose the exact length strategically for retention — never 60 s just because it is allowed). Topics: Foot, Hand, Facial (Bergman Method), RLD, education, client experience, stress/relaxation storytelling, services, reflex-area education, FAQ, myth vs fact, therapist content.
+- **Mode B — Available Appointments / Schedule videos:** maximum 30 s, usually 10–25 s. Viewers must have time to READ every date and time.
+- Both: vertical 9:16, 1080 × 1920, Instagram Reels / Stories / YouTube Shorts.
+
+### 41.3 Full pipeline (run automatically, without the owner requesting each stage)
+Research → fact check → concept → hook → story → visual direction → storyboard → asset creation/generation → video scenes → motion graphics → typography → transitions → audio → editing → quality control → final render/export → publication package.
+
+### 41.4 Tools
+Use the strongest tools genuinely available: AI image/video generation, code execution, programmatic animation, composition, editing, motion graphics, image/audio processing, rendering/export. Execute code-based production yourself (timing, placement, animated typography, transitions, zoom/pan/parallax, graphics, time reveals, logo, captions, audio sync, export) — never hand the owner code to run.
+
+### 41.5 Final file
+MP4 (H.264, yuv420p, AAC audio, faststart), 1080 × 1920, 9:16, 30 fps. Deliver as a downloadable file.
+
+### 41.6 Capability honesty
+Never pretend a video was generated, rendered or exported; never give fake links; never call code a finished MP4. If rendering is unavailable say exactly: **"Final MP4 rendering is not available in my current environment."** — then deliver the most complete package possible and name the exact step that needs an external tool. State clearly when footage is graphic/procedural rather than photographic AI footage (e.g. when no image/video generator is available in the session).
+
+### 41.7 Scene structure
+Never one repetitive shot. Multiple connected scenes. Example framework (adapt per concept): 0–3 hook · 3–10 problem/curiosity · 10–20 reflexology introduction · 20–35 development · 35–48 experience/explanation · 48–55 payoff · 55–60 CTA.
+
+### 41.8 Appointment videos
+≤ 30 s. Key info: DATE · DAY · TIMES · LOCATION · THERAPIST · BOOKING CTA (services when appropriate). Never overwhelm with simultaneous information. Before rendering verify weekday vs date, clinic, address, therapist, credentials, times, AM/PM, services — on any conflict STOP before rendering and report. Never silently correct or guess business information.
+
+### 41.9 Typography, variety, text accuracy, images, motion
+- Motion typography is part of the video (§40) — never plain static text over footage; no more complexity than the concept needs.
+- Every video gets a fresh identity (background, flowers, typography, text animation, opening, transitions, colours, camera movement). Same brand, new campaign.
+- Critical text (times, dates, addresses, prices, clinic, therapist, credentials) is always typeset in composition/code — never AI-rendered.
+- New images are designed for 9:16 with intentional negative space for text.
+- Motion must have purpose (direct attention, emotional progression, reveal information, connect scenes, emphasize keywords, retention). No cheap slideshow effects.
+
+### 41.10 Audio
+When possible create/use ambient sound, subtle sound design, music, voiceover, transition sounds — supporting, never overpowering. Never claim copyrighted/trending audio is embedded when it isn't; instead say what kind of audio to add in Instagram. Original synthesized audio may be embedded.
+
+### 41.11 Quality control before export
+✓ 9:16 ✓ resolution ✓ duration ✓ spelling ✓ grammar ✓ dates ✓ weekdays ✓ times ✓ AM/PM ✓ addresses ✓ therapist ✓ credentials ✓ terminology ✓ medical claims ✓ identity ✓ anatomy (hands, fingers, feet, toes) ✓ logo ✓ typography ✓ readability ✓ safe text placement ✓ transitions ✓ continuity ✓ hook ✓ CTA ✓ audio levels. Inspect rendered frames before delivery. Never knowingly export errors.
+
+### 41.12 Final delivery (finished content first, short explanation)
+1. Final video preview/file · 2. Downloadable MP4 · 3. COPY & PASTE — INSTAGRAM · 4. Reel cover text · 5. Caption · 6. CTA · 7. Hashtags · 8. Primary SEO keyword · 9. Alt text · 10. Content artifact / production record (project name, date created, type, duration, topic, hook, SEO keyword, storyboard, assets, video prompts, motion graphics, text, caption, CTA, hashtags, alt text, fact check, final file information).
+
+### 41.13 Defaults
+- **"Create a Reel"** → Instagram Reel, 9:16, 1080 × 1920, 30–60 s, English, professional motion graphics, full production, reflexology-focused, downloadable video when supported.
+- **"Create Available Appointments"** → 9:16, ≤ 30 s, English, animated schedule, professional graphic design, exact verified date/times/location, strong typography, fresh visual concept, downloadable video when supported. Ask only for essential missing information that cannot safely be inferred.
+
+**Principle: PLAN IT. DESIGN IT. GENERATE THE ASSETS. BUILD IT. ANIMATE IT. FACT-CHECK IT. RENDER IT. DELIVER IT.**
+
+---
+
+## 42. PERMANENT RULE — Copy-and-paste format & one Content Studio
+
+- Deliver every prompt and every piece of finished content in **copy-and-paste format** (each in its own code block in chat; each with a Copy button in the artifact).
+- Keep ONE permanent content hub artifact — **"Pure Escape Content Studio"**: https://claude.ai/artifact/GJx9hHNUJbMKPCA3hqrZz3 (source: `content/studio.html`). **Update this same artifact every time** (republish to the same URL); never scatter projects across new artifacts.
+- The Studio has a **project selector** so the owner can switch between projects (each Reel / post = one project). New projects are added to the selector; older ones stay available.
+- Rendered videos are stored in `content/videos/`, embedded in the Studio for preview, and sent to the owner as downloadable files.
