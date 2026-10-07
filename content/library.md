@@ -1,5 +1,7 @@
 # Content Library — The Pure Escape / Zarina, RCRT
 
+All entries so far are for **The Pure Escape** (698 Corydon Ave). From now on, name the location in the Title of every availability post.
+
 Running record of produced content (CLAUDE.md §39.16). Add one row per piece; update status and performance when known.
 
 | Date | Title | Type | Modality | Purpose | Hook (short) | Visual style | Palette / fonts / layout / transition | CTA | Audience problem | Status | Artifact |

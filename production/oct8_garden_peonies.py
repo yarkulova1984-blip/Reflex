@@ -21,7 +21,7 @@ from garden_bokeh import W, H, build_garden, render_bg  # noqa: E402
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FONTS = os.path.join(ROOT, "brand", "fonts")
-LOGO = os.path.join(ROOT, "brand", "the-pure-escape-logo.png")
+LOGO = os.path.join(ROOT, "brand", "locations", "the-pure-escape-logo.png")
 OUT_DIR = os.path.join(ROOT, "content", "videos")
 NAME = "2026-10-08-available-appointments"
 FPS = 30

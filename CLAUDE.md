@@ -350,14 +350,21 @@ This rule extends sections 23–26 and 35. Whenever an "Available Appointments" 
 
 ---
 
-## 38. Brand facts (confirmed by the owner — never alter)
+## 38. Brand facts & approved locations (confirmed by the owner — never alter)
 
-- **Clinic:** The Pure Escape
-- **Address:** 698 Corydon Ave (Winnipeg, Manitoba) — confirmed correct by the owner, Oct 2026
-- **Therapist:** Zarina, RCRT
-- **Official logo:** `brand/the-pure-escape-logo.png` (transparent PNG, 1774 × 887). Wordmark "the pureEscape" in green with a dark-green "E", black reclining-figure line art, green leaves and the tagline "revive, refresh, relax". Preserve exactly (section 27): never redraw, recolour, re-letter or ask an AI generator to create it — place the real file during editing, on a light, clean background.
-- **Official service list:** Spanish Massage · Foot Reflexology · Hand Reflexology · Facial Reflexology — Bergman Method · Ultimate Escape Package. Never invent services or describe what a package includes without the owner's confirmation.
-- **Booking method:** **Instagram DM only** (confirmed by the owner, Oct 2026). Booking CTAs say "Send us a DM to book" / "DM to book". Never mention a website, booking link or phone number.
+**Therapist (all locations):** Zarina, RCRT
+**Booking method:** **Instagram DM only** (confirmed Oct 2026). Booking CTAs say "Send us a DM to book" / "DM to book". Never mention a website, booking link or phone number.
+
+**Approved work locations** — each availability post belongs to exactly ONE location. Never assume, never mix (see §44.1):
+
+| Location | Address | Official logo file | Services |
+|---|---|---|---|
+| **The Pure Escape** | 698 Corydon Ave, Winnipeg, Manitoba | `brand/locations/the-pure-escape-logo.png` (transparent PNG, 1774 × 887; green "the pureEscape" wordmark, black reclining-figure line art, leaves, tagline "revive, refresh, relax") | Spanish Massage · Foot Reflexology · Hand Reflexology · Facial Reflexology — Bergman Method · Ultimate Escape Package |
+| **Advanced Massage Therapy** | 2020 Corydon Ave, Winnipeg, Manitoba | `brand/locations/advanced-massage-therapy-logo.png` (transparent PNG, 1672 × 941; white serif "ADVANCED" with silver bevel, "MASSAGE THERAPY" beneath between two lines, teal 3D triquetra/trinity knot behind) | **Not yet confirmed — ask the owner which services to show** |
+
+- Logos: preserve exactly (§27). Never redraw, recolour, re-letter, approximate or ask an AI generator to create them — place the real file during editing. The Pure Escape logo needs a light, clean background; the Advanced Massage Therapy logo (white lettering + teal knot) needs a dark or mid-tone background for its white text to stay readable.
+- Never invent services for a location or describe what a package includes without the owner's confirmation.
+- The owner may add more locations later — add them to this table.
 
 ---
 
@@ -579,3 +586,54 @@ When possible create/use ambient sound, subtle sound design, music, voiceover, t
 3. **Hook = a direct question that pushes to book.** In the first 1–3 seconds the viewer must read and understand a question aimed at them, e.g. "What are you waiting for?", followed by honest urgency ("Only 2 evening times open", "Book before it's gone"). Urgency must stay truthful — base it only on the real number of open slots; never invent "almost full" claims.
 4. **Retention + booking drive in every video:** hook question → urgency → date & times → services → strong booking CTA ("Don't wait — book now"). One clear CTA.
 5. **Something new every time** — new background, palette, fonts, layout, motion and hook wording (log in `content/library.md`).
+
+---
+
+## 44. PERMANENT RULE UPDATE — Locations & Available Appointments Reels V2 (Oct 2026)
+
+**This section UPDATES and OVERRIDES any older conflicting rule about Available Appointments videos** (including the ≤30 s limit in §41.2/§41.8/§41.13 and the "always a question" hook in §43.3).
+
+### 44.1 Location first
+- Requests for Available Appointments / Availability / Work Schedule / Openings / Last-Minute Availability / Appointment Reel / Booking Availability belong to ONE approved location (§38).
+- If the owner specifies the location → use it. If NOT → **STOP and ask: "Which location is this availability for?"** Never choose a location yourself; never mix clinic names, addresses, logos or services between locations.
+- Use the official logo of the selected location. If more than one logo exists and the location is unclear → ask before production.
+
+### 44.2 Duration — 20 to 35 seconds
+Every Available Appointments Reel is **minimum 20 s, maximum 35 s** (never longer than 35 s; shorter than 20 s only if the owner explicitly asks). Choose the exact length (e.g. 20 / 22 / 25 / 28 / 30 / 32 / 35 s) from the number of dates, times, services, storytelling, readability and retention — do not default to the maximum.
+
+### 44.3 Hook — first 1–3 seconds
+Never open like a boring schedule. A strong visual and/or text hook that works with **sound OFF**, truthful, no medical claims. Structure examples only (do not reuse verbatim): "YOUR RESET STARTS HERE" · "NEED A PAUSE THIS WEEK?" · "TIME FOR YOURSELF?" · "3 OPENINGS LEFT" · "TAKE A MOMENT FOR YOU". Rotate hook types: question · short statement · curiosity · countdown · date reveal · emotional phrase · visual surprise · service close-up · flower/object transition · location reveal · appointment reveal · typographic hook. Booking drive and honest urgency from §43 still apply.
+
+### 44.4 Time reveal = hero moment, with camera movement
+- Appointment times never just appear over a static image. Each time reveal is a visual event (e.g. camera moves forward → depth increases → gold time appears → a fine line animates → transition).
+- Rotate camera moves (never the same every Reel): slow push-in · gentle pull-back · subtle lateral slide · foreground reveal · rack-focus transition · parallax · macro-to-wide · wide-to-detail · slow orbit · static cinematic frame + text movement. Elegant, never aggressive zooming.
+- Design FOREGROUND / MIDGROUND / BACKGROUND depth when appropriate (e.g. soft petals in front, information/focal object in the middle, room behind).
+- Times must stay on screen long enough to read without pausing.
+
+### 44.5 Gold typography
+Refined warm metallic gold is a recurring accent for important appointment text — elegant, never bright yellow, glittery or cheap. Combine with ivory, cream, warm beige, black, charcoal, deep green, burgundy, soft rose or seasonal colours. Not every word gold — keep colour hierarchy.
+
+### 44.6 Typography and layout must change every time
+- Fresh font direction for each Reel, rotating coherent systems: bold modern sans + light sans · editorial serif + clean sans · luxury serif + minimal sans · condensed display + clean body · modern sans + very limited script. No childish/novelty/hard-to-read fonts.
+- **No fixed text-box template.** Prefer text directly over the image, in negative space, floating typography, text following the composition, minimal line dividers, transparent overlays, gradient support, small graphic elements. Cards/boxes only when they genuinely improve that design.
+- Each Reel is a new creative campaign — vary photo/video style, background, composition, font pairing, text scale and position, gold accents, graphic elements, camera movement, text animation, transitions, hook, depth, lighting and palette.
+
+### 44.7 Text reveal effects (choose 2–4 compatible behaviours per Reel)
+Blur → sharp · soft focus → clear · left/right/top/bottom → position · vertical or horizontal scroll · mask reveal · fade · word-by-word · letter-by-letter (when elegant) · scale from small · subtle scale from large · tracking reveal · text emerging from behind an object · text revealed by camera movement · text appearing from negative space · clean instant appearance after a visual transition.
+- "Appearing from nowhere": background softens → time becomes sharply visible → background returns to focus.
+- Blur is a transition tool (background blur → text, flower blur → focus → time, scene blur → next service, foreground passing the lens). Don't overuse it; important text always ends sharp.
+- Scrolling suits dates, days, services, short phrases — never make appointment times move too fast to read.
+
+### 44.8 Services
+Only the services the owner confirms for that location/post. Introduce them progressively with relevant visuals when it suits the concept (not necessarily all at once). If not specified and not safely inferable → ask.
+
+### 44.9 Structure, summary and pacing
+- Example 35 s flow (adapt): 0–3 hook · 3–7 day/date · 7–12 first visual/service/time · 12–17 second time · 17–22 third time · 22–27 services/experience · 27–32 full availability summary · 32–35 location + booking CTA.
+- Near the end, usually a **final summary frame** with all times, therapist, location and "book" CTA (DM), held long enough to read; it may be simpler than the earlier scenes.
+- Retention ≠ chaos: balance movement with stillness, large text with negative space, detail with simple information. Polished, not hyperactive.
+
+### 44.10 Pre-production check
+LOCATION selected? If no → ask. Then confirm clinic name, address, logo, date, weekday, times, therapist, services — never start final production with an ambiguous location.
+
+### 44.11 Standard
+Every Available Appointments Reel = strong 1–3 s hook + premium photo/video + 20–35 s + camera movement + dynamic typography + gold accents + changing reveal effects + clear times + correct location + official logo of that location + final booking CTA. It must feel like a short premium social ad, not a static flyer turned into video. Act as art director and motion designer: make these decisions yourself and change them intelligently from Reel to Reel.

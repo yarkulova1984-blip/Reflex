@@ -19,7 +19,7 @@ from PIL import Image, ImageDraw, ImageFilter, ImageFont
 
 ROOT = os.path.dirname(os.path.dirname(os.path.abspath(__file__)))
 FONTS = os.path.join(ROOT, "brand", "fonts")
-LOGO = os.path.join(ROOT, "brand", "the-pure-escape-logo.png")
+LOGO = os.path.join(ROOT, "brand", "locations", "the-pure-escape-logo.png")
 PHOTO = os.path.join(ROOT, "brand", "photos", "peonies-dark-bouquet.jpg")
 OUT_DIR = os.path.join(ROOT, "content", "videos")
 NAME = "2026-10-08-available-appointments-v3"
