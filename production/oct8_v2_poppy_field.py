@@ -373,7 +373,7 @@ def main(mode):
     mp4 = os.path.join(OUT_DIR, f"{NAME}.mp4")
     cmd = ["ffmpeg", "-y", "-loglevel", "error",
            "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-", "-i", wav,
-           "-c:v", "libx264", "-preset", "medium", "-crf", "17", "-profile:v", "high", "-level", "4.1",
+           "-c:v", "libx264", "-preset", "medium", "-crf", "23", "-profile:v", "high", "-level", "4.1",
            "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", mp4]
     proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     with Pool(4, initializer=_init) as pool:
