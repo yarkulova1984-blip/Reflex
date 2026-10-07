@@ -1,2 +1,3 @@
 content/videos/qc/
 __pycache__/
+content/videos/.*
