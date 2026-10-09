@@ -17,6 +17,22 @@ Running record of produced content (CLAUDE.md §39.16). Add one row per piece; u
 | Oct 2026 | **The Pure Escape** — Facial Reflexology (Bergman Method) + Hand Reflexology with Chanel skincare, $145 / 1 hr 15 min | Service Reel, 44 s, rendered MP4 | Facial (Bergman) + Hand Reflexology | Service promotion / education / booking | Curiosity: "Your face HAS A MAP" | Owner's 9 AI photos with push-in / slide / wide-to-detail / pull-back, cross-defocus; headroom so type never covers faces or hands | Champagne gold + ivory + nude blush · Italiana + Manrope + Parisienne · no boxes · tracking reveal, script write-ons, 4-step ritual progress line, price "from nowhere" | DM TO BOOK | Wanting a deeply relaxing, premium facial | Rendered — content/videos/2026-10-pe-facial-reflexology-chanel.mp4 | [Content Studio](https://claude.ai/artifact/GJx9hHNUJbMKPCA3hqrZz3) |
 | Oct 10, 2026 | **The Pure Escape** — Available Appointment, Saturday, October 10, 10:30 a.m. ("Saturday Light") | Reel, 30 s, rendered MP4 | 6 services incl. RLD (to confirm) | Booking / availability | Emotional statement: "Your SATURDAY reset is waiting" | Owner's bright room photo (text removed) + 6 candlelit service photos; masked candle flicker, flower sway, motes, push-in / pull-back, cross-defocus | Ivory + deep green + deep metallic gold (benchmark: owner posters) · Gilda Display + Tenor Sans + Alex Brush · logo top-left, no boxes · write-on, blur-to-sharp, scroll-up date, time "from nowhere", vertical service list with gold current item | DM TO BOOK | Weekend self-care | Rendered — content/videos/2026-10-10-pe-available-appointment.mp4 | [Content Studio](https://claude.ai/artifact/GJx9hHNUJbMKPCA3hqrZz3) |
 
+## Music log (§46 — never repeat; check before composing)
+
+| Date | Project | Key / progression | Tempo / pulse | Instruments / timbre | Accents & texture |
+|---|---|---|---|---|---|
+| Oct 2026 | Oct 7 availability v1 (PE) | F maj9 → D min9 | rubato ambient | breathing sine pad | chimes |
+| Oct 2026 | Oct 7 availability v2 — window light (PE) | G maj9 → E min9 | rubato ambient | sine pad | chimes |
+| Oct 2026 | Oct 8 v1 — garden peonies (PE) | D maj9 → B min9 | rubato ambient | sine pad | chimes |
+| Oct 2026 | Oct 8 v2 — poppy field (PE) | C maj9 → A min9 → F maj9 | rubato ambient | sine pad | low "slams" on hook + chimes |
+| Oct 2026 | Oct 8 v3 — peony photo (PE) | E♭ maj9 → C min9 → A♭ maj7 | rubato ambient | sine pad | plucks |
+| Oct 2026 | Oct 9 v1 — bamboo (AMT) | D sus/add9 → B min9 → D maj9 | rubato ambient | sine pad | hollow wooden knocks |
+| Oct 2026 | Oct 9 v2 — photos (AMT) | A maj9 → D maj9 → B min9 | rubato ambient | sine pad | bells |
+| Oct 2026 | Facial Reflexology Bergman + Chanel (PE) | C maj9 → A min11 → F maj9 | rubato ambient | sine pad | bells |
+| Oct 2026 | Oct 10 Saturday Light (PE) | E maj9 → C♯ min9 → E maj9 | rubato ambient | sine pad | bells |
+
+_Note: everything so far has been a rubato ambient pad. The next pieces must move away from it, with a real tempo/groove, a different lead instrument (piano, kalimba, marimba, pluck guitar, Rhodes…), a rhythm layer and new textures._
+
 ## Performance learnings
 
 _No performance data yet._

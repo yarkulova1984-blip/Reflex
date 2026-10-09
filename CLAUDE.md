@@ -655,3 +655,22 @@ Every Available Appointments Reel = strong 1–3 s hook + premium photo/video + 
 - **QC before export:** clinic, address, logo, date, weekday, times, services, therapist, credentials, spelling, readability, gold quality, smooth animation, moving background, duration, dimensions, no cropped/overlapping text, no artifacts.
 - **Delivery:** MP4 (H.264, AAC, 30 fps) + cover image + caption + hook + CTA + **five** relevant hashtags + SEO keywords + saved production record (Content Studio), with the publication text separate and ready to paste.
 - **Most important:** never a static poster with a basic zoom — a layered, animated, professionally designed advertisement, different every time.
+
+---
+
+## 46. PERMANENT RULE — New music for every publication (owner request, Oct 2026)
+
+Applies to every Reel, Story, Short, availability video or any other piece with audio, starting with the next post after this rule was added.
+
+- **Never reuse the same music.** Every publication gets its own original soundtrack. Changing only the chords is not enough. Change at least **four** of:
+  - key / mode
+  - chord progression
+  - tempo / pulse: rubato ambient vs a steady 60–110 BPM groove
+  - lead instrument / timbre: felt piano · kalimba · marimba · harp-like pluck · nylon-guitar-like pluck · warm Rhodes · celesta/music box · flute-like sine lead · soft strings pad · glass/bowl tones · handpan
+  - rhythm layer: none · soft brushed percussion · shaker · heartbeat-like low pulse · finger-snaps · lo-fi kick
+  - texture / sound design: rain, breeze, room tone, water, vinyl crackle, risers, whooshes, reverse swells
+  - reveal accent: bells · plucks · wooden knocks · glass pings · low boom · piano note · string swell
+- **Check the log first.** Before composing, read the Music log in `content/library.md` and pick a direction that differs clearly from the last several entries. After rendering, add the new entry to the log.
+- **Music serves the concept.** It fits the visual campaign and mood (e.g. a bright morning tempo for a Saturday post, a slow evening glow for late openings). Sync the accents to the time reveals. Keep it supportive, never overpowering.
+- **Rights.** Use only original synthesized audio, or audio the owner supplies or has licensed. Never claim that copyrighted or trending audio is embedded. When it helps reach, also suggest *what kind* of Instagram library track could replace the embedded audio (style, tempo, mood), without naming it as already included.
+- **Delivery note.** Each package states in one line which music direction was used (key · tempo · instruments · texture), so the owner can see that it is new.
