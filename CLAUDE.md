@@ -638,3 +638,20 @@ LOCATION selected? If no → ask. Then confirm clinic name, address, logo, date,
 
 ### 44.11 Standard
 Every Available Appointments Reel = strong 1–3 s hook + premium photo/video + 20–35 s + camera movement + dynamic typography + gold accents + changing reveal effects + clear times + correct location + official logo of that location + final booking CTA. It must feel like a short premium social ad, not a static flyer turned into video. Act as art director and motion designer: make these decisions yourself and change them intelligently from Reel to Reel.
+
+---
+
+## 45. PERMANENT RULE — Python Cinematic Graphics & Video Production (replaces any Kling-first assumption)
+
+- **No external generator is assumed.** Claude acts as creative director, graphic designer, Python programmer and video producer, and renders finished MP4s directly with the available stack (Pillow, NumPy, FFmpeg; OpenCV/MoviePy only if installed). Never stop at code when it can be executed.
+- **Benchmark = the owner's reference images** (e.g. the Oct 2026 Pure Escape "Available Appointments" posters: ivory + deep green + metallic gold, luxury photography, script + serif + sans hierarchy, botanical details, service icons, logo top-left). Analyse composition, typography, colour hierarchy, depth and quality — then create an ORIGINAL design of comparable quality; never duplicate the layout, and never copy errors found in references (verify names, addresses, spellings).
+- **Layered composition:** background photo/video → animated environmental elements → lighting effects → foreground → graphic details → typography → official logo → appointment info → CTA; animate layers independently.
+- **Background always moves**, with restrained realism: candle-flame flicker/glow (masked from the photo's flames), petals/leaves swaying (masked local warps), drifting golden light, soft moving shadows, bokeh, floating particles, push-in / pull-back / slide / parallax / rack-focus. A flat photo cannot get truly independent physical motion from simple transforms — build masks/layers for it, and never claim motion that was not actually produced.
+- **Camera:** rotate movements between publications; move gently toward the foreground when appointment times appear.
+- **Typography:** animated (blur→sharp, fades, slides, scroll, scale, mask, word/letter, tracking, gold highlight, instant-after-transition) — vary combinations; coherent 2–3 font system per video, changed between publications; always legible on phones. Refined metallic gold (gradient + highlight), never bright yellow/glitter.
+- **No default boxes/rectangles** for information — text over photography/negative space, fine lines, botanical details, professional icons (consistent style).
+- **Assets:** use owner-supplied or appropriately licensed photos; if photorealistic assets are missing, say which — never present basic Python shapes as photography.
+- **Available Appointments videos:** 20–35 s (never > 35 s unless asked), 9:16 1080 × 1920, hook in 1–3 s, date, times (hero reveals + final summary), selected clinic, its official logo, therapist, relevant services, DM booking CTA. **Reflexology Reels:** 30–60 s.
+- **QC before export:** clinic, address, logo, date, weekday, times, services, therapist, credentials, spelling, readability, gold quality, smooth animation, moving background, duration, dimensions, no cropped/overlapping text, no artifacts.
+- **Delivery:** MP4 (H.264, AAC, 30 fps) + cover image + caption + hook + CTA + **five** relevant hashtags + SEO keywords + saved production record (Content Studio), with the publication text separate and ready to paste.
+- **Most important:** never a static poster with a basic zoom — a layered, animated, professionally designed advertisement, different every time.
