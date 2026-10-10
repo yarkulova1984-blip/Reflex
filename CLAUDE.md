@@ -674,3 +674,17 @@ Applies to every Reel, Story, Short, availability video or any other piece with 
 - **Music serves the concept.** It fits the visual campaign and mood (e.g. a bright morning tempo for a Saturday post, a slow evening glow for late openings). Sync the accents to the time reveals. Keep it supportive, never overpowering.
 - **Rights.** Use only original synthesized audio, or audio the owner supplies or has licensed. Never claim that copyrighted or trending audio is embedded. When it helps reach, also suggest *what kind* of Instagram library track could replace the embedded audio (style, tempo, mood), without naming it as already included.
 - **Delivery note.** Each package states in one line which music direction was used (key · tempo · instruments · texture), so the owner can see that it is new.
+
+---
+
+## 47. PERMANENT RULE — Educational Reflexology Reels: voiceover, realistic feet, living reflex maps (owner request, Oct 2026)
+
+Applies to every educational / service Reel (e.g. RLD and its benefits, Foot / Hand / Facial Reflexology explainers), starting with the next one.
+
+1. **Voiceover + light music.** A pleasant, warm, calm **female voice** reads the script in natural Canadian English. Soft background music sits under the voice and ducks while she speaks; the voice is always clearly understandable. The script is timed to the scenes, and on-screen text supports it rather than repeating every word. Benefits are always worded responsibly (§5, §6, §39.21), e.g. "may help you relax", never "cures", "detoxes" or "drains toxins".
+2. **Voice source, honestly stated.** Use a natural neural TTS voice when the environment provides one. If none is available, never substitute a robotic voice and never claim a voice is embedded when it isn't. Deliver the timed script plus a music-only (or music + guide-track) version, and state what is needed: allowing the voice-model host in the environment's network settings, the owner's own recording, or a licensed TTS service.
+3. **Maximally realistic feet.** Build on real photography or video of feet (owner-supplied or licensed), never drawn or vector feet presented as real. Reflex-map lines, contours and outlines follow the real anatomy of the photo. Five toes, correct proportions, no distortion.
+4. **Beautiful, living points and numbers.** Reflex points are animated: soft glowing dots that pulse, numbered labels that draw on, fine contour lines that trace along the foot, and gentle highlight sweeps. The style is consistent, premium and legible, never clip-art. Reflex areas are labelled as reflexology concepts, not medical anatomy (§5, §17).
+5. **Finger movement and pressing.** Show the technique: thumb-walking and pressure on the point, with a visible press (skin dimple / ripple warp and a glow pulse at the contact point) synced to the voice. Real finger motion needs real footage. When the owner provides a short vertical clip of Zarina's hands working (10–20 s, good light), use it; otherwise animate presses on a real photo and say that the finger motion is simulated.
+6. **Background = the real treatment, softly blurred.** Behind the foot and graphics use a photo or video of a reflexologist working on feet, with a soft background blur (depth-of-field), not a flat single-colour background. Foreground foot and graphics stay sharp, giving layered depth.
+7. **Full combination.** Voice + music + realistic foot + living map + pressing motion + blurred treatment background + motion typography, all in one integrated film (§40, §41, §45, §46). New music every time (§46).
