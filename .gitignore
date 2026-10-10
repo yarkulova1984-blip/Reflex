@@ -1,3 +1,7 @@
 content/videos/qc/
 __pycache__/
 content/videos/.*
+
+# TTS model files (large, re-downloadable from Hugging Face)
+brand/voice/*.onnx
+brand/voice/*.bin
