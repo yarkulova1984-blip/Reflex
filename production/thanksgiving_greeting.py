@@ -337,6 +337,10 @@ def synth_audio(path, sr=48000):
     voice = np.zeros(n)
     for i, st in enumerate(STARTS):
         v, vsr = sf.read(os.path.join(AUD, f"line{i + 1}.wav"))
+        if v.ndim > 1:
+            v = v.mean(1)
+        if vsr != sr:   # Kokoro renders at 24 kHz: resample to the mix rate (otherwise the voice plays 2x fast)
+            v = np.interp(np.arange(int(len(v) * sr / vsr)) * vsr / sr, np.arange(len(v)), v)
         a0 = int(st * sr)
         m = min(len(v), n - a0)
         voice[a0:a0 + m] += v[:m]
@@ -421,7 +425,7 @@ def main(mode):
     synth_audio(wav)
     cmd = ["ffmpeg", "-y", "-loglevel", "error", "-f", "rawvideo", "-pix_fmt", "rgb24", "-s", f"{W}x{H}", "-r", str(FPS), "-i", "-",
            "-i", wav, "-af", "loudnorm=I=-14:TP=-1.5:LRA=9", "-c:v", "libx264", "-preset", "slow", "-crf", "21", "-profile:v", "high",
-           "-level", "4.1", "-pix_fmt", "yuv420p", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", tmp]
+           "-level", "4.1", "-pix_fmt", "yuv420p", "-ar", "48000", "-c:a", "aac", "-b:a", "192k", "-shortest", "-movflags", "+faststart", tmp]
     proc = subprocess.Popen(cmd, stdin=subprocess.PIPE)
     with Pool(4, initializer=_init) as pool:
         for buf in pool.imap(_render, range(int(DURATION * FPS)), chunksize=4):
