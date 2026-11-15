@@ -1,0 +1,40 @@
+# Story Reel — "Who cares for the ones who care?" (The Pure Escape · Foot + Hand Reflexology)
+
+Status: script + shot list, waiting for the owner's photos. Location: The Pure Escape, 698 Corydon Ave (official logo added in edit, never AI-drawn).
+Format: Reel 9:16, 1080 × 1920, ~55 s, female voiceover (Kokoro, gentle blend) + new music (§46), living photos (§45, §48).
+
+## Voiceover (third-person narrator; not presented as Zarina's own voice)
+1. Who cares for the ones who care?
+2. Late one night, a young mother arrives at a Winnipeg hospital.
+3. The doctor on call is already running.
+4. Hours later, he places a newborn in her arms.
+5. Twelve hours on his feet. His hands, his back, his mind: all tired.
+6. Later that week, on Corydon Avenue, he finally stops at The Pure Escape.
+7. Zarina listens first. Then she begins: foot reflexology, then his hands, the hands that held new life.
+8. Reflexology is designed to help the body shift into rest-and-digest mode, guided by the parasympathetic nervous system. Breathing slows. Shoulders soften. Many clients say they leave feeling lighter.
+9. Breathe easier. Smile more. Give your mind and body time to rest and recover.
+10. Zarina, RCRT, your reflexology therapist. Send us a DM to book.
+
+## Fact check
+- Parasympathetic nervous system = "rest and digest" branch of the autonomic nervous system: established physiology.
+- Reflexology "activating" it: small studies report lower heart rate / blood pressure / anxiety after reflexology; evidence is limited and mixed, so the wording is "designed to help" + "many clients say".
+- "Works and supports all body systems": reflexology theory only, so on screen as "In reflexology, your feet and hands map the whole body", never as medical fact.
+- The story is a dramatization (AI / staged photos): add a small "Dramatized story" note and do not present it as a real patient testimonial. Do not name a specific real hospital.
+
+## Shot list / photos (9:16 vertical, no text or signage drawn by AI)
+| # | Time | Photo | How it comes alive |
+|---|---|---|---|
+| 1 | 0–3 s | Hospital entrance at night in the rain, ambulance bay | rain streaks, red/blue light pulse on wet ground, reflections shimmer |
+| 2 | 3–7 s | Pregnant woman arriving in a wheelchair, nurse beside her | slow push-in, rain, warm entrance light |
+| 3 | 7–11 s | Young male doctor running down a hospital corridor | passing ceiling lights, light streaks, subtle parallax |
+| 4 | 11–16 s | Doctor handing the newborn to the mother | soft warm light breathing, glow sweep, slow push-in |
+| 5 | 16–21 s | Doctor in his car after the shift, exhausted, rain on windshield | raindrops running down the glass, passing street-light sweeps across his face |
+| 6 | 21–25 s | The Pure Escape storefront at 698 Corydon (owner's real photo preferred) | warm window glow, passing car-light reflections; logo placed in edit |
+| 7 | 25–29 s | Zarina greeting/talking with the doctor in the treatment room | candle flicker, plant sway, steam from tea |
+| 8 | 29–35 s | Close-up: Zarina's thumbs working on his feet | press dimple + glowing reflex points (§47) |
+| 9 | 35–40 s | Close-up: hand reflexology on his hands | press dimple, glow along the fingers |
+| 10 | 40–47 s | His face, eyes closed, deeply relaxed on the table | breathing rhythm (soft scale), slow light sweep, breathing ring graphic |
+| 11 | 47–52 s | He leaves smiling into morning sunlight | sun flare, light rays, leaves |
+| 12 | 52–56 s | CTA end card over a calm treatment-room photo | candle flicker; logo, Zarina RCRT, address, DM |
+
+Character lock: the doctor must be the SAME man in shots 3, 4, 5, 7–11 (same face, hair, scrubs). Zarina: use her real reference photo (§14).
