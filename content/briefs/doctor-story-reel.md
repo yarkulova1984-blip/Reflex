@@ -38,3 +38,6 @@ Format: Reel 9:16, 1080 × 1920, ~55 s, female voiceover (Kokoro, gentle blend) 
 | 12 | 52–56 s | CTA end card over a calm treatment-room photo | candle flicker; logo, Zarina RCRT, address, DM |
 
 Character lock: the doctor must be the SAME man in shots 3, 4, 5, 7–11 (same face, hair, scrubs). Zarina: use her real reference photo (§14).
+
+## Added scene 10b (owner request) — after the therapy: the doctor raises his hand, he and Zarina look at each other
+Placed between shot 10 (relaxed face) and shot 11 (leaving into the sunlight), ~3 s. No voiceover over it: a quiet beat with a soft string swell. On-screen (optional): "Thank you."
