@@ -143,6 +143,7 @@ Maintain: facial identity, facial proportions, age appearance, hairstyle, hair c
 - Do not beautify so aggressively that they become a different person.
 - Do not randomly change face, hair, glasses, age, body shape, clothing, or accessories between scenes.
 - **The reference image is the identity source.**
+- **Zarina's reference photo (owner-supplied, Oct 2026):** `brand/people/zarina-reference.png`. Identity notes: dark brown/black curly hair in a loose high messy bun with soft wispy curtain bangs and loose strands, warm brown eyes, warm light-olive skin, natural makeup, defined brows, several small silver ear piercings, black V-neck scrubs. In image prompts keep these traits identical in every scene; never add readable text or embroidery to her clothing (typeset names in editing, §22).
 
 ## 15. Anatomical accuracy
 
