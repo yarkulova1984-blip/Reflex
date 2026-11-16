@@ -132,23 +132,19 @@ def _blurL(a, r):
 def build_still(key):
     S = {}
     if key == "storefront":
-        im = Image.open(os.path.join(DS, "pe-storefront-website.jpg")).convert("RGB")
-        im = im.crop((300, 70, 1219, 788))                  # drop phone number, website bar and Lens icon
-        bg = im.resize((int(H * im.width / im.height), H), Image.LANCZOS)
-        x0 = (bg.width - W) // 2
-        bg = bg.crop((x0, 0, x0 + W, H)).filter(ImageFilter.GaussianBlur(28))
-        bg = Image.fromarray(np.clip(np.asarray(bg, np.float32) * 0.45, 0, 255).astype(np.uint8))
-        win_w = int(W * 1.12)
-        win = im.resize((win_w, int(im.height * win_w / im.width)), Image.LANCZOS).filter(ImageFilter.UnsharpMask(2, 60, 2))
-        m = np.ones((win.height, win.width), np.float32)
-        fy = np.minimum(np.arange(win.height), win.height - 1 - np.arange(win.height)) / 70.0
-        fx = np.minimum(np.arange(win.width), win.width - 1 - np.arange(win.width)) / 70.0
-        m *= np.clip(fy, 0, 1)[:, None] * np.clip(fx, 0, 1)[None, :]
-        S["bg"], S["win"], S["mask"] = np.asarray(bg, np.float32), np.asarray(win, np.float32), m
-        return S
-    fn = {"hospital": "hospital-night-rain.png", "wheelchair": "wheelchair-arrival.png",
-          "relaxed": "relaxed-table.png", "portrait": "zarina-portrait.png"}[key]
-    im = Image.open(os.path.join(DS, "stills", fn)).convert("RGB")
+        im = Image.open(os.path.join(DS, "stills", "pe-storefront-pro.jpg")).convert("RGB")
+        # booking is DM only: hide the phone number and website on the left sign (keep its red colour)
+        box = (28, 540, 246, 628)
+        reg = im.crop(box).filter(ImageFilter.GaussianBlur(26))
+        m = Image.new("L", reg.size, 0)
+        ImageDraw.Draw(m).rectangle((6, 6, reg.width - 6, reg.height - 6), fill=255)
+        im.paste(reg, box[:2], m.filter(ImageFilter.GaussianBlur(5)))
+    else:
+        im = None
+    if im is None:
+        fn = {"hospital": "hospital-night-rain.png", "wheelchair": "wheelchair-arrival.png",
+              "relaxed": "relaxed-table.png", "portrait": "zarina-portrait.png"}[key]
+        im = Image.open(os.path.join(DS, "stills", fn)).convert("RGB")
     k = max(W / im.width, H / im.height) * 1.1
     big = im.resize((int(im.width * k), int(im.height * k)), Image.LANCZOS).filter(ImageFilter.UnsharpMask(2, 55, 2))
     arr = np.asarray(big, np.float32)
@@ -169,6 +165,13 @@ def build_still(key):
         m = np.zeros((h, w), np.float32)
         m[int(0.55 * h):int(0.95 * h), int(0.0 * w):int(0.9 * w)] = 1
         S["chest"] = _blurL(m * 255, 60) / 255
+    if key == "storefront":
+        m = np.zeros((h, w), np.float32)
+        m[: int(0.30 * h)] = 1
+        m[int(0.62 * h):, : int(0.25 * w)] = 1
+        m[int(0.80 * h):] = 1
+        S["leaves"] = _blurL(m * 255, 50) / 255
+        S["signs"] = gl([(0.40, 0.37, 0.10), (0.77, 0.38, 0.12)])
     if key == "portrait":
         S["flame"] = gl([(0.88, 0.39, 0.05), (0.97, 0.43, 0.02), (0.93, 0.59, 0.02)])
     return S
@@ -180,30 +183,9 @@ def flick(t, s):
 
 def render_still(key, S, t, p):
     """p = 0..1 progress through the scene (camera)."""
-    if key == "storefront":
-        img = S["bg"].copy()
-        z = 1.0 + 0.06 * ease_in_out(p)
-        win = S["win"]
-        ww, wh = int(win.shape[1] * z), int(win.shape[0] * z)
-        wi = np.asarray(Image.fromarray(win.astype(np.uint8)).resize((ww, wh), Image.BILINEAR), np.float32)
-        mk = np.asarray(Image.fromarray((S["mask"] * 255).astype(np.uint8)).resize((ww, wh), Image.BILINEAR), np.float32)[..., None] / 255
-        # light sweep across the window (from left to right)
-        sx = (-0.3 + 1.6 * prog(t, 21.6, 2.6)) * ww
-        xs = np.arange(ww, dtype=np.float32)[None, :]
-        ys = np.arange(wh, dtype=np.float32)[:, None]
-        band = np.exp(-(((xs - sx) + (ys - wh / 2) * 0.4) / 90.0) ** 2)[..., None]
-        wi = wi + band * np.array([90, 70, 36], np.float32)
-        x0 = (W - ww) // 2 - int(30 * p)
-        y0 = 700 - (wh - 844) // 2
-        cx0, cy0 = max(0, x0), max(0, y0)
-        sx0, sy0 = cx0 - x0, cy0 - y0
-        cw, chh = min(W - cx0, ww - sx0), min(H - cy0, wh - sy0)
-        region = img[cy0:cy0 + chh, cx0:cx0 + cw]
-        mm = mk[sy0:sy0 + chh, sx0:sx0 + cw]
-        img[cy0:cy0 + chh, cx0:cx0 + cw] = region * (1 - mm) + wi[sy0:sy0 + chh, sx0:sx0 + cw] * mm
-        return img
     cams = {"hospital": (0.5, 0.42, 1.0, 1.08), "wheelchair": (0.52, 0.45, 1.08, 1.0),
-            "relaxed": (0.45, 0.42, 1.0, 1.10), "portrait": (0.5, 0.42, 1.1, 1.0)}
+            "relaxed": (0.45, 0.42, 1.0, 1.10), "portrait": (0.5, 0.42, 1.1, 1.0),
+            "storefront": (0.55, 0.42, 1.0, 1.10)}
     u, v, z0, z1 = cams[key]
     z = z0 + (z1 - z0) * ease_in_out(p)
     arr, w, h = S["arr"], S["w"], S["h"]
@@ -218,7 +200,14 @@ def render_still(key, S, t, p):
     if key == "relaxed":   # slow breathing: the chest and blanket rise a little
         br = math.sin(2 * math.pi * t / 4.6)
         gy = gy - S["chest"][iy, ix] * 4.0 * br
+    if key == "storefront":   # foliage moving in a light breeze
+        lv = S["leaves"][iy, ix]
+        gx = gx + lv * (5.0 * np.sin(1.1 * t + gy * 0.006) + 2.0 * np.sin(2.3 * t + gx * 0.01))
+        gy = gy + lv * (2.5 * np.sin(1.4 * t + gx * 0.007))
     img = bilinear(arr, gx, gy)
+    if key == "storefront":   # warm sunlight drifting over the signs
+        sg = S["signs"][iy, ix][..., None]
+        img = img * (1 + 0.14 * sg * (0.6 + 0.4 * math.sin(t * 1.3)))
     if key == "hospital":
         r = max(0.0, math.sin(t * 9.0)) ** 2
         b = max(0.0, math.sin(t * 9.0 + math.pi)) ** 2
