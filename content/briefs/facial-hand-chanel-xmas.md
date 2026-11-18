@@ -10,3 +10,6 @@ Fact notes:
 - No RCT evidence specific to facial reflexology; foot reflexology evidence for relaxation is small and mixed → "designed to help you relax", "many clients feel calmer".
 - Chanel: Zarina uses Chanel skincare (owner-confirmed). Do not show the Chanel logo as a sponsor/partner; no claim of affiliation. AI-made packshots with Chanel logos: avoid close-ups.
 - Phone mock-up still says "ONLINE BOOKING NOW AVAILABLE" — conflicts with DM-only booking (§38); do not use that still as-is.
+
+## Owner's Bergman chart (Nov 18, 2026) — reference only, NOT stored or shown (© Ziggie Bergman, "on-line postings prohibited")
+Read from the chart: centre of the forehead just above the brows = Hypothalamus / Pituitary / Thyroid / Pineal (Brain, Spine line above); along the brows = Occipital, Eye point, Eustachian tube, Outer ear, Inner ear, Shoulder; "Heart" / "Cardiac area" are drawn at the outer side by the eye on one side, not between the brows → owner to confirm the heart wording. Our video draws its own points on our own photo; never reproduce the chart.
