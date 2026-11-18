@@ -717,3 +717,27 @@ This is an ADDITION to the existing rules. It does not replace or rewrite the br
 10. **Locations and services unchanged.** Do not change any of Zarina's location rules (§38, §44). **Do NOT add Nazar's Safe Harbour Therapy Center to Zarina's project.** Keep her locations, addresses, services, official logos and designation (RCRT). If a location is missing from an appointment request, ask before production.
 11. **Rendering and QC.** Implement the effects in executable code. Build the animation → composite the scenes → sync text and audio → render the MP4 (9:16, 1080 × 1920, established durations and specs, audio at 48 kHz) → inspect the final output (frames, duration, audio track and sample rate, voice speed and levels). Never claim a successful render without verifying the final file.
 12. **Final instruction.** Every Reel should feel like a premium, professionally animated wellness advertisement, with fresh typography, elegant lighting, controlled movement and beautiful transitions. Render the finished downloadable MP4 whenever technically possible.
+
+---
+
+## 49. PERMANENT RULE — Text placement, product visibility, soft opening/ending (owner feedback, Nov 2026)
+
+Applies to every video from now on, with no reminder needed.
+
+1. **Text never sits on a head or face.** Before placing any text, locate the faces, hands at work, feet and the products being shown in every scene, and keep text off them.
+2. **Reels safe area (industry standard for 9:16 1080 × 1920):**
+   - Keep all text inside x 60–960 and y 250–1580.
+   - The top ~250 px is covered by the Instagram header, the bottom ~340 px by the caption and buttons, and the right ~120 px by the action buttons.
+   - Exception: a small legal note, for example "Dramatized story", may sit lower.
+3. **Default position = LOWER THIRD.** When people are in the upper or middle part of the frame (the usual case), text sits in the lower-third band, y ≈ 1180–1560, centred, over a soft dark gradient (no boxes).
+   - Only when the subject fills the lower half (a face close-up on the table, a hand close-up) does the text move to the **upper band**, y ≈ 290–520, above the head and below the safe-area top.
+   - Never place text "wherever it fits".
+4. **Readable rhythm.** Show at most 2 lines at a time. Swap groups of lines rather than stacking 4–5. Keep hierarchy: one large line plus one smaller line.
+5. **Show the products and the action.** When Zarina works with products (e.g. Chanel skincare) or does a technique, the whole action must stay visible. Never crop the products out.
+   - If a clip is not 9:16, fit the full width and fill the rest with a blurred, darker copy of the same clip.
+   - Put the text in that blurred area, not over the products or hands.
+6. **Soft overall feel.** Use gentle fades (0.4–0.7 s), small scale changes (≤ 5–8 %), light text blur-ins and soft gradients. No harsh pops.
+7. **Opening and ending:**
+   - **Opening:** every video starts from a soft blur that resolves into the sharp image ("from blur into reality", about 1 s).
+   - **Ending:** every video ends by dissolving back into a soft blur with a light warm veil (about 1.5 s) after the final CTA has been readable.
+8. **QC:** before export, check stills of every scene specifically for text-over-face, text outside the safe area and hidden products, and fix them before rendering.

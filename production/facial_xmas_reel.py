@@ -44,7 +44,7 @@ NAME = "2026-11-facial-hand-chanel-christmas"
 W, H, FPS = 1080, 1920, 30
 WORDS = json.load(open(os.path.join(AUD, "words.json")))
 VOICE_END = WORDS[-1]["e"]
-DURATION = round(VOICE_END + 2.8, 1)
+DURATION = round(VOICE_END + 3.2, 1)
 
 IVORY = (252, 247, 238)
 NIGHT = (14, 9, 8)
@@ -81,7 +81,7 @@ def T(txt, fnt, fill, tracking=0):
 SCENES = [
     ("still", "steps", 0.0, 3.05, {}),
     ("clip", "c-cafe-phone", 2.85, 6.25, {"src": 0.6, "speed": 1.0, "z0": 1.0, "z1": 1.06}),
-    ("clip", "c-shelf", 6.05, 11.45, {"src": 0.0, "speed": 0.95, "z0": 1.04, "z1": 1.0}),
+    ("clip", "c-shelf", 6.05, 11.45, {"src": 0.0, "speed": 0.95, "z0": 1.0, "z1": 1.03}),
     ("still", "between", 11.25, 22.10, {}),
     ("still", "brows", 21.90, 27.10, {}),
     ("clip", "c9-hand", 26.90, 32.00, {"src": 0.3, "speed": 0.95, "z0": 1.0, "z1": 1.06}),
@@ -244,7 +244,7 @@ def build():
     glow.putalpha(gl.filter(ImageFilter.GaussianBlur(55)))
     A["logo_glow"] = glow   # soft edgeless light (no plate, §38) so the black line art reads on the dark third
 
-    A["h1"] = T("The best gift", prata(124), IVORY)
+    A["h1"] = T("The best gift", prata(112), IVORY)
     A["h2"] = T("this Christmas", scr(150), "champ")
     A["h3"] = T("isn't under the tree.", prata(70), IVORY)
     A["time"] = T("It's time.", prata(130), "champ")
@@ -261,7 +261,7 @@ def build():
     A["hands"] = T("then the hands", scr(130), "champ")
     A["pbp"] = T("POINT BY POINT", quest(46), IVORY, tracking=16)
     A["min"] = T("75 MINUTES", quest(52), IVORY, tracking=14)
-    A["price"] = T("$145", prata(230), "champ")
+    A["price"] = T("$145", prata(200), "champ")
     A["glow"] = T("lighter & glowing", scr(118), IVORY)
     A["gift"] = T("Christmas", scr(170), "champ")
     A["gift2"] = T("GIFT CERTIFICATES", quest(54), IVORY, tracking=12)
@@ -278,120 +278,142 @@ def fade(t, s, e, fi=0.4, fo=0.35):
     return ease_out(prog(t, s, fi)) * (1 - ease_in_out(prog(t, e - fo, fo)))
 
 
+def soft_wash(f, y0, y1, a):
+    """Gentle dark gradient behind lower-third text (soft, no hard edges)."""
+    wash(f, y0, y0 + (y1 - y0) * 0.35, NIGHT, 0.0, 0.55 * a)
+    wash(f, y0 + (y1 - y0) * 0.35, y1, NIGHT, 0.55 * a, 0.62 * a)
+
+
+# Text layout (§49): Reels safe area = x 60…960, y 250…1580. Faces in the upper/middle part → text lives
+# in the LOWER THIRD band (≈1180–1560); only when the subject fills the lower half does text move to the
+# UPPER band (≈290–520). Never over faces, hands at work or the products being shown.
+LOW = 1340      # anchor of the lower-third block
+
+
 def frame_at(t, A):
     f, act = background(A, t)
     cx = W / 2
-    # 1 · hook (0–3)
+    # 1 · hook (0–3): lower third, under the subject
     if t < 3.1:
-        a = fade(t, 0, 3.05, 0.15)
-        wash(f, 0, 760, NIGHT, 0.6 * a, 0.0)
-        sharp_in(f, A["h1"], cx - A["h1"].adv / 2, 300, prog(t, 0.0, 0.5), a, scale_from=1.1, blur=16)
-        p = prog(t, at("Christmas") - 0.2, 0.6)
+        a = fade(t, 0, 3.05, 0.6, 0.45)
+        soft_wash(f, 1050, H, a)
+        sharp_in(f, A["h1"], cx - A["h1"].adv / 2, LOW, prog(t, 0.35, 0.8), a, scale_from=1.04, blur=10)
+        p = prog(t, at("Christmas") - 0.2, 0.8)
         if p > 0:
-            put_shine(f, A["h2"], cx - A["h2"].adv / 2, 440, a * ease_out(p), prog(t, 1.0, 1.2))
-        rise(f, A["h3"], cx - A["h3"].adv / 2, 540, prog(t, at("under") - 0.1, 0.5), a)
-    # 2 · time, for her, for you (café)
+            put_shine(f, A["h2"], cx - A["h2"].adv / 2, LOW + 130, a * ease_out(p), prog(t, 1.2, 1.4))
+        rise(f, A["h3"], cx - A["h3"].adv / 2, LOW + 230, prog(t, at("under") - 0.1, 0.7), a)
+    # 2 · time, for her, for you (café) — lower third over the table
     if 2.85 <= t < 6.3:
-        a = fade(t, 2.85, 6.25)
-        wash(f, 1300, H, NIGHT, 0.0, 0.75 * a)
-        sharp_in(f, A["time"], cx - A["time"].adv / 2, 1560, prog(t, at("time") - 0.1, 0.5), a, blur=12)
+        a = fade(t, 2.85, 6.25, 0.5, 0.45)
+        soft_wash(f, 1100, H, a)
+        sharp_in(f, A["time"], cx - A["time"].adv / 2, LOW + 20, prog(t, at("time") - 0.1, 0.7), a, blur=8)
         for k, w in enumerate(("her", "you")):
-            p = ease_out(prog(t, at(w) - 0.25, 0.45))
+            p = ease_out(prog(t, at(w) - 0.25, 0.6))
             tx = A["for"][k]
-            put_x(f, tx, (cx - 230 if k == 0 else cx + 230) - tx.adv / 2, 1700, a * p, dy=16 * (1 - p))
-    # 3 · services (shelf)
+            put_x(f, tx, (cx - 220 if k == 0 else cx + 220) - tx.adv / 2, LOW + 170, a * p, dy=12 * (1 - p))
+    # 3 · services: the whole shelf scene stays visible (products + hands); text below it, two lines at a time
     if 6.05 <= t < 11.5:
-        a = fade(t, 6.05, 11.45)
-        wash(f, 1280, H, NIGHT, 0.0, 0.8 * a)
-        letters(f, A["fr"], cx - A["fr"].adv / 2, 1460, at("Facial") - 0.1, t, a, step=0.02)
-        wipe(f, A["bm"], cx - A["bm"].adv / 2, 1570, prog(t, at("Bergman") - 0.15, 0.7), a)
-        slide(f, A["hr"], cx - A["hr"].adv / 2, 1660, prog(t, at("hand") - 0.1, 0.5), a, dx=90)
-        p = prog(t, at("Chanel") - 0.2, 0.6)
+        a = fade(t, 6.05, 11.45, 0.5, 0.45)
+        sw = at("hand") - 0.25                       # swap from "Facial / Bergman" to "Hand / Chanel"
+        a1 = a * (1 - ease_in_out(prog(t, sw - 0.35, 0.35)))
+        a2 = a * ease_out(prog(t, sw, 0.4))
+        letters(f, A["fr"], cx - A["fr"].adv / 2, 1440, at("Facial") - 0.1, t, a1, step=0.02)
+        wipe(f, A["bm"], cx - A["bm"].adv / 2, 1545, prog(t, at("Bergman") - 0.15, 0.8), a1)
+        slide(f, A["hr"], cx - A["hr"].adv / 2, 1440, prog(t, sw, 0.6), a2, dx=60)
+        p = prog(t, at("Chanel") - 0.2, 0.7)
         if p > 0:
-            put_shine(f, A["ch"], cx - A["ch"].adv / 2, 1760 + 14 * (1 - ease_out(p)), a * ease_out(p), prog(t, at("Chanel") + 0.4, 1.0))
-    # 4 · the facial map (between the brows, then along the brows)
+            put_shine(f, A["ch"], cx - A["ch"].adv / 2, 1530 + 10 * (1 - ease_out(p)), a2 * ease_out(p), prog(t, at("Chanel") + 0.4, 1.2))
+    # 4 · the facial map — face fills the lower half, so text sits in the upper band (above the head)
     if 11.25 <= t < 22.15:
-        a = fade(t, 11.25, 22.1)
+        a = fade(t, 11.25, 22.1, 0.5, 0.45)
         S = A["S"]["between"]
         p = (t - 11.25) / (22.1 - 11.25)
-        wash(f, 0, 520, NIGHT, 0.6 * a, 0.0)
-        wipe(f, A["map"], cx - A["map"].adv / 2, 220, prog(t, at("In") , 0.8), a)
+        wash(f, 0, 640, NIGHT, 0.5 * a, 0.0)
+        wipe(f, A["map"], cx - A["map"].adv / 2, 330, prog(t, at("In"), 1.0), a)
         tp = at("pituitary") - 0.1
         sx, sy = to_screen(S, "between", p, *PIT)
         point(f, A, sx, sy - 14, t, tp)
-        p2 = ease_out(prog(t, tp + 0.2, 0.5)) * (1 - ease_in_out(prog(t, at("Along") - 0.3, 0.3)))
-        put_c(f, A["pit"], 360, a * p2, dy=12 * (1 - p2))
+        p2 = ease_out(prog(t, tp + 0.2, 0.6)) * (1 - ease_in_out(prog(t, at("Along") - 0.35, 0.35)))
+        put_c(f, A["pit"], 450, a * p2, dy=10 * (1 - p2))
         tb = at("occipital") - 0.3
         pts = [to_screen(S, "between", p, *b) for b in BROW]
         for j, (bx, by) in enumerate(pts):
             point(f, A, bx, by - 10, t, tb + 0.35 * j)
-        # a fine aqua line traced along each brow
         for seg in (pts[:2], pts[2:]):
             q = ease_in_out(prog(t, tb, 1.4))
-            if q > 0 and len(seg) > 1:
+            if q > 0:
                 im = Image.new("RGBA", (W, H), (0, 0, 0, 0))
                 xy = [(x, y - 10) for x, y in seg]
                 n = max(2, int(len(xy) * q + 0.999))
-                ImageDraw.Draw(im).line(xy[:n], fill=AQUA + (int(170 * a),), width=3)
-                f.alpha_composite(im.filter(ImageFilter.GaussianBlur(1.2)))
-        p3 = ease_out(prog(t, at("Along") - 0.1, 0.5))
-        put_c(f, A["brw"], 360, a * p3, dy=12 * (1 - p3))
-    # 5 · soften the forehead
+                ImageDraw.Draw(im).line(xy[:n], fill=AQUA + (int(150 * a),), width=3)
+                f.alpha_composite(im.filter(ImageFilter.GaussianBlur(1.4)))
+        p3 = ease_out(prog(t, at("Along") - 0.1, 0.6))
+        put_c(f, A["brw"], 450, a * p3, dy=10 * (1 - p3))
+    # 5 · soften the forehead — upper band
     if 21.9 <= t < 27.15:
-        a = fade(t, 21.9, 27.1)
-        wash(f, 0, 600, NIGHT, 0.6 * a, 0.0)
-        drop(f, A["soft"], cx - A["soft"].adv / 2, 250, prog(t, at("soften") - 0.2, 0.6), a)
-        p = prog(t, at("unwind") - 0.3, 0.7)
+        a = fade(t, 21.9, 27.1, 0.5, 0.45)
+        wash(f, 0, 640, NIGHT, 0.5 * a, 0.0)
+        drop(f, A["soft"], cx - A["soft"].adv / 2, 330, prog(t, at("soften") - 0.2, 0.7), a)
+        p = prog(t, at("unwind") - 0.3, 0.8)
         if p > 0:
-            put_shine(f, A["unw"], cx - A["unw"].adv / 2, 420 + 14 * (1 - ease_out(p)), a * ease_out(p), prog(t, at("unwind") + 0.3, 1.0))
-    # 6 · hands
+            put_shine(f, A["unw"], cx - A["unw"].adv / 2, 480 + 10 * (1 - ease_out(p)), a * ease_out(p), prog(t, at("unwind") + 0.3, 1.2))
+    # 6 · hands — the hand fills the middle; text in the upper band
     if 26.9 <= t < 32.05:
-        a = fade(t, 26.9, 32.0)
-        wash(f, 0, 520, NIGHT, 0.5 * a, 0.0)
-        wipe(f, A["hands"], cx - A["hands"].adv / 2, 230, prog(t, at("Then") - 0.1, 0.8), a)
-        letters(f, A["pbp"], cx - A["pbp"].adv / 2, 330, at("point", 29.0) - 0.1, t, a, step=0.03)
-    # 7 · 75 minutes · $145 · lighter & glowing (café steps)
+        a = fade(t, 26.9, 32.0, 0.5, 0.45)
+        wash(f, 0, 600, NIGHT, 0.45 * a, 0.0)
+        wipe(f, A["hands"], cx - A["hands"].adv / 2, 340, prog(t, at("Then") - 0.1, 0.9), a)
+        letters(f, A["pbp"], cx - A["pbp"].adv / 2, 440, at("point", 29.0) - 0.1, t, a, step=0.03)
+    # 7 · 75 minutes · $145 · lighter & glowing — lower third
     if 31.8 <= t < 40.85:
-        a = fade(t, 31.8, 40.8)
-        wash(f, 1240, H, NIGHT, 0.0, 0.8 * a)
-        letters(f, A["min"], cx - A["min"].adv / 2, 1420, at("75") - 0.1, t, a, step=0.03)
+        a = fade(t, 31.8, 40.8, 0.5, 0.45)
+        soft_wash(f, 1050, H, a)
+        letters(f, A["min"], cx - A["min"].adv / 2, 1230, at("75") - 0.1, t, a, step=0.03)
         tp = at("$145") - 0.25
-        sharp_in(f, A["price"], cx - A["price"].adv / 2, 1640, prog(t, tp, 0.6), a, scale_from=0.84, blur=14)
-        if t > tp + 0.7:
-            put_shine(f, A["price"], cx - A["price"].adv / 2, 1640, a, prog(t, tp + 0.7, 1.1))
-        wipe(f, A["glow"], cx - A["glow"].adv / 2, 1790, prog(t, at("lighter") - 0.2, 0.8), a)
-    # 8 · gift certificates (friends leaving the café)
+        sharp_in(f, A["price"], cx - A["price"].adv / 2, 1430, prog(t, tp, 0.7), a, scale_from=0.92, blur=10)
+        if t > tp + 0.8:
+            put_shine(f, A["price"], cx - A["price"].adv / 2, 1430, a, prog(t, tp + 0.8, 1.3))
+        wipe(f, A["glow"], cx - A["glow"].adv / 2, 1560, prog(t, at("lighter") - 0.2, 0.9), a)
+    # 8 · gift certificates — lower third
     if 40.6 <= t < 44.65:
-        a = fade(t, 40.6, 44.6)
-        wash(f, 1250, H, NIGHT, 0.0, 0.8 * a)
-        p = prog(t, at("Christmas", 40.0) - 0.1, 0.6)
+        a = fade(t, 40.6, 44.6, 0.5, 0.45)
+        soft_wash(f, 1100, H, a)
+        p = prog(t, at("Christmas", 40.0) - 0.1, 0.7)
         if p > 0:
-            put_shine(f, A["gift"], cx - A["gift"].adv / 2, 1520, a * ease_out(p), prog(t, at("Christmas", 40.0) + 0.4, 1.0))
-        rise(f, A["gift2"], cx - A["gift2"].adv / 2, 1640, prog(t, at("certificates") - 0.1, 0.5), a)
-        letters(f, A["dm"], cx - A["dm"].adv / 2, 1740, at("Send") - 0.1, t, a, step=0.025)
-    # 9 · end card (mirror portrait): logo on the light wall, frosted lower third
+            put_shine(f, A["gift"], cx - A["gift"].adv / 2, 1320, a * ease_out(p), prog(t, at("Christmas", 40.0) + 0.4, 1.2))
+        rise(f, A["gift2"], cx - A["gift2"].adv / 2, 1440, prog(t, at("certificates") - 0.1, 0.6), a)
+        letters(f, A["dm"], cx - A["dm"].adv / 2, 1530, at("Send") - 0.1, t, a, step=0.025)
+    # 9 · end card (mirror portrait): frosted lower part, logo on a soft edgeless glow, all inside the safe area
     if t >= 44.4:
-        a = ease_out(prog(t, 44.4, 0.5))
-        fr = ease_in_out(prog(t, 44.5, 0.8))
+        a = ease_out(prog(t, 44.4, 0.7))
+        fr = ease_in_out(prog(t, 44.5, 1.0))
         if fr > 0.01:
-            low = f.crop((0, 1080, W, H)).filter(ImageFilter.GaussianBlur(20 * fr))
-            ramp = np.clip(np.arange(H - 1080, dtype=np.float32) / 200.0, 0, 1)[:, None].repeat(W, 1)
-            f.paste(low, (0, 1080), Image.fromarray((ramp * 255).astype(np.uint8), "L"))
-        wash(f, 1080, 1280, NIGHT, 0.0, 0.8 * a)
-        wash(f, 1280, H, NIGHT, 0.8 * a, 0.88 * a)
+            low = f.crop((0, 940, W, H)).filter(ImageFilter.GaussianBlur(20 * fr))
+            ramp = np.clip(np.arange(H - 940, dtype=np.float32) / 220.0, 0, 1)[:, None].repeat(W, 1)
+            f.paste(low, (0, 940), Image.fromarray((ramp * 255).astype(np.uint8), "L"))
+        wash(f, 940, 1160, NIGHT, 0.0, 0.72 * a)
+        wash(f, 1160, H, NIGHT, 0.72 * a, 0.8 * a)
         lg = A["logo"]
-        put(f, A["logo_glow"], cx - A["logo_glow"].width / 2, 1215 - A["logo_glow"].height / 2, a * 0.95)
-        put(f, lg, cx - lg.width / 2, 1215 - lg.height / 2 + 12 * (1 - a), a)
-        letters(f, A["wpg"], cx - A["wpg"].adv / 2, 1360, at("Winnipeg") - 0.05, t, step=0.02)
+        put(f, A["logo_glow"], cx - A["logo_glow"].width / 2, 1085 - A["logo_glow"].height / 2, a * 0.9)
+        put(f, lg, cx - lg.width / 2, 1085 - lg.height / 2 + 10 * (1 - a), a)
+        letters(f, A["wpg"], cx - A["wpg"].adv / 2, 1225, at("Winnipeg") - 0.05, t, step=0.02)
         tz = at("RCRT") - 0.7
-        sharp_in(f, A["zr"], cx - A["zr"].adv / 2, 1500, prog(t, tz, 0.6), 1.0, blur=12)
-        wipe(f, A["ther"], cx - A["ther"].adv / 2, 1600, prog(t, at("your", 48.0) - 0.1, 0.8))
-        p = ease_out(prog(t, at("therapist") + 0.2, 0.5))
-        put_c(f, A["addr"], 1690, p, dy=12 * (1 - p))
-        p = ease_out(prog(t, at("therapist") + 0.6, 0.5))
-        put_c(f, A["cta"], 1780, p, dy=14 * (1 - p))
-        L = 420 * ease_in_out(prog(t, at("therapist") + 0.9, 0.6))
-        line(f, cx, 1806, L, GOLD_LINE, p, thick=3)
+        sharp_in(f, A["zr"], cx - A["zr"].adv / 2, 1345, prog(t, tz, 0.7), 1.0, blur=8)
+        wipe(f, A["ther"], cx - A["ther"].adv / 2, 1430, prog(t, at("your", 48.0) - 0.1, 0.9))
+        p = ease_out(prog(t, at("therapist") + 0.2, 0.6))
+        put_c(f, A["addr"], 1495, p, dy=10 * (1 - p))
+        p = ease_out(prog(t, at("therapist") + 0.6, 0.6))
+        put_c(f, A["cta"], 1565, p, dy=12 * (1 - p))
+        L = 420 * ease_in_out(prog(t, at("therapist") + 0.9, 0.7))
+        line(f, cx, 1588, L, GOLD_LINE, p, thick=2)
+    # opening: from blur into reality; ending: back into a soft blur
+    bi = 1 - ease_out(prog(t, 0.0, 1.1))
+    bo = ease_in_out(prog(t, DURATION - 1.6, 1.6))
+    b = max(bi, bo)
+    if b > 0.01:
+        f = f.filter(ImageFilter.GaussianBlur(26 * b))
+        if bo > 0.01:
+            veil = Image.new("RGBA", (W, H), (248, 238, 226, int(90 * bo)))
+            f.alpha_composite(veil)
     return np.asarray(f.convert("RGB"))
 
 
