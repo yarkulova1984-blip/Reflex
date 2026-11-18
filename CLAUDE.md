@@ -689,11 +689,11 @@ Applies to every educational / service Reel (e.g. RLD and its benefits, Foot / H
 5. **Finger movement and pressing.** Show the technique: thumb-walking and pressure on the point, with a visible press (skin dimple / ripple warp and a glow pulse at the contact point) synced to the voice. Real finger motion needs real footage. When the owner provides a short vertical clip of Zarina's hands working (10–20 s, good light), use it; otherwise animate presses on a real photo and say that the finger motion is simulated.
 6. **Background = the real treatment, softly blurred.** Behind the foot and graphics use a photo or video of a reflexologist working on feet, with a soft background blur (depth-of-field), not a flat single-colour background. Foreground foot and graphics stay sharp, giving layered depth.
 7. **Full combination.** Voice + music + realistic foot + living map + pressing motion + blurred treatment background + motion typography, all in one integrated film (§40, §41, §45, §46). New music every time (§46).
-8. **Owner's chosen voice (Nov 2026): ElevenLabs "Zara".** The owner records voiceovers herself on ElevenLabs (paid account) and sends the MP3; Claude syncs it to the video using word-level timestamps.
-   - Owner's reference link: https://json2video.com/ai-voices/elevenlabs/voices/OtEfb2LVzIE45wdYe54M/ ("Zara – Soft, Professional and Gentle", voice ID OtEfb2LVzIE45wdYe54M).
-   - The first MP3 she sent (Nov 15, 2026, doctor story) was made with "Zara – The Warm Real-World Conversationalist" (model eleven v4); this voice is also acceptable.
-   - Workflow: give the owner the final English script → she generates the MP3 → Claude transcribes it (faster-whisper, word timestamps), checks the text against the script, and builds the scene timing from the real timestamps (§48.8).
-   - Fallback when no MP3 is available: the gentle Kokoro blend (production/rld_voice.py).
+8. **THE ONE VOICE FOR EVERY VIDEO (owner's permanent rule, Nov 2026).** Every video with a voiceover (Reels, Stories, educational, story, seasonal, availability) uses the SAME voice, automatically, without asking and without the owner reminding: the gentle female voice of the RLD Reel and the Thanksgiving greeting.
+   - Recipe (production/rld_voice.py): Kokoro TTS (kokoro-v1.0.onnx + voices-v1.0.bin from huggingface.co/fastrtc/kokoro-onnx, saved in brand/voice/), voice = 0.7 × af_heart + 0.3 × af_bella, speed 0.95, lang en-us, then `soften()` (gentle high roll-off, a little warmth, small soft room); 0.45 s pause between lines; export at 48 kHz.
+   - If the container was reset, reinstall `kokoro-onnx` + `soundfile` and re-download the two model files into brand/voice/ before rendering (they are git-ignored).
+   - Never switch to another voice (ElevenLabs Zara, other Kokoro voices, any other site) unless the owner explicitly asks for a different voice for a specific video. The ElevenLabs Zara MP3 of the doctor story (Nov 2026) stays a one-off.
+   - Always mix voice at 48 kHz with correct resampling, then verify voice speed/pitch in the final file (§48.11).
 
 ---
 
