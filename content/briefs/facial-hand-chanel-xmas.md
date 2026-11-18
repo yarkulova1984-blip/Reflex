@@ -13,3 +13,17 @@ Fact notes:
 
 ## Owner's Bergman chart (Nov 18, 2026) — reference only, NOT stored or shown (© Ziggie Bergman, "on-line postings prohibited")
 Read from the chart: centre of the forehead just above the brows = Hypothalamus / Pituitary / Thyroid / Pineal (Brain, Spine line above); along the brows = Occipital, Eye point, Eustachian tube, Outer ear, Inner ear, Shoulder; "Heart" / "Cardiac area" are drawn at the outer side by the eye on one side, not between the brows → owner to confirm the heart wording. Our video draws its own points on our own photo; never reproduce the chart.
+
+## Owner confirmed (Nov 18, 2026)
+Heart is NOT between the brows (owner's mistake) → use pituitary/hypothalamus above the brows; occipital, ear, eye along the brows. Show price + time ($145 · 75 minutes) and the location (The Pure Escape, 698 Corydon Ave). Gift certificates by DM.
+
+## FINAL voiceover script (for the owner's Zara MP3)
+The best gift this Christmas isn't under the tree.
+It's time. For her. For you.
+Facial reflexology, the Bergman Method, and hand reflexology, finished with Chanel skincare.
+In facial reflexology, the point just above the brows is linked to the pituitary and hypothalamus reflexes. Along the brows: the occipital, ear and eye reflexes.
+Gentle, precise touch, designed to soften the forehead and help the whole nervous system unwind.
+Then the hands, slowly, point by point.
+Seventy-five minutes of calm, for one hundred and forty-five dollars. Many clients say they leave lighter, and glowing.
+Christmas gift certificates are available. Send me a DM.
+Winnipeg luxury therapy at The Pure Escape. Zarina, RCRT, your reflexology therapist.
