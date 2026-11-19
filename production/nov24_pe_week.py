@@ -47,7 +47,7 @@ SERVICES = [("Ultimate Escape Package", ""), ("Facial + Hand Reflexology", "WITH
 VARIANTS = {
     "midweek": {
         "name": "2026-11-24-pe-tue-wed-thu-available-appointments", "bg": "rose-eucalyptus.jpg", "dur": 34.0,
-        "days": [("TUESDAY", "November 24", [("11:00", "a.m."), ("3:15", "p.m.")]),   # owner wrote "3:15 a.m." → confirm p.m.
+        "days": [("TUESDAY", "November 24", [("11:00", "a.m."), ("3:15", "p.m.")]),   # owner confirmed 3:15 p.m. (note said "a.m.")
                  ("WEDNESDAY", "November 25", [("11:00", "a.m."), ("12:15", "p.m."), ("1:30", "p.m."), ("2:45", "p.m."), ("4:00", "p.m.")]),
                  ("THURSDAY", "November 26", [("3:00", "p.m."), ("4:15", "p.m."), ("5:30", "p.m.")])],
         "hook": ("10", "openings", "TUESDAY  ·  WEDNESDAY  ·  THURSDAY"),

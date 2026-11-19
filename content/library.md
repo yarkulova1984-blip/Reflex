@@ -26,6 +26,7 @@ Running record of produced content (CLAUDE.md §39.16). Add one row per piece; u
 | Nov 2026 | **The Pure Escape** — Facial Reflexology (Bergman) + Hand Reflexology with Chanel skincare · Christmas gift ("The best gift this Christmas isn't under the tree") | Reel, 53 s, Zara voice (json2video) | Facial + Hand | Seasonal / service / booking | Curiosity: "The best gift this Christmas isn't under the tree." | Owner AI clips + stills (café, shelf, facial, mirror), glowing brow points, snow + bokeh | Prata + Questrial + Monsieur La Doulaise (new) · champagne gold + ivory | DM / gift certificates | Gift ideas + self-care | Delivered | Content Studio |
 | Nov 23 & 27, 2026 | **Advanced Massage Therapy** — Mon Nov 23 + Fri Nov 27 ("Gilded Leaves") | Reel, 30 s | Spanish Massage · Foot/Hand/Facial Reflexology | Booking | Countdown: big gold "6 openings" | Owner's bronze/gold leaves: palm sway, gold light sweep, dust | DM Serif Display + Lexend + Corinthia · centred column times, gold sweeps | DM to book | Weekly availability | Delivered | Content Studio |
 | Nov 28, 2026 | **The Pure Escape** — Saturday Nov 28 ("Cream Blossoms") | Reel, 24 s | 5 PE services incl. Ultimate Escape, Facial + Hand w/ Chanel | Booking | Emotional: "Saturday is for you" | Owner's cream blossoms: breathing petals, light sweep, pollen | Abhaya Libre + Nunito Sans + Allison | DM to book | Weekend self-care | Delivered | Content Studio |
+| Nov 24–26, 2026 | **The Pure Escape** — Tue 24 · Wed 25 · Thu 26 ("Rose & Eucalyptus") | Reel, 34 s | 5 PE services | Booking | Countdown: "10 openings" | Owner's rose + eucalyptus bouquet, breathing petals, light sweep | Bellefair + Karla + Birthstone · feathered bands, alternating blur/slide time reveals | DM to book | Midweek availability | Delivered | Content Studio |
 
 ## Music log (§46 — never repeat; check before composing)
 
@@ -50,6 +51,7 @@ Running record of produced content (CLAUDE.md §39.16). Add one row per piece; u
 | Nov 2026 | Facial + Hand Christmas Reel | E major: Emaj7 · C#m · Amaj7 · Bsus | **76 BPM** | glockenspiel melody, "ahh" choir pad, sub | sleigh-bell shaker · handbell accents · voice-ducked (Zara) |
 | Nov 2026 | AMT week of Nov 23 | F minor → A♭: Fm9 · D♭maj7 · A♭ · E♭ | **88 BPM lo-fi** | warm Rhodes, flute-like lead, sub | lo-fi kick + rim · tape hiss + wow · glass pings |
 | Nov 2026 | PE Saturday Nov 28 | B♭ major: B♭maj7 · Gm7 · Cm9 · F9 | **100 BPM bossa** | vibraphone, upright bass | brushed shaker · morning room tone |
+| Nov 2026 | PE Tue–Thu Nov 24–26 | D major: Dmaj7 · Bm7 · Gmaj7 · A6 | **92 BPM** | chorus guitar arpeggios, cello | soft shaker · birdsong · glass pings |
 
 _Note: everything up to Oct 10 was a rubato ambient pad. From Oct 16 every piece needs a different tempo, lead instrument, rhythm and texture. Used so far: rubato pads; 84 BPM electric piano + marimba; 72 BPM felt-piano waltz + strings + rain; 96 BPM kalimba + handpan + snaps; 104 BPM nylon guitar + brushes + vinyl. Next ideas: celesta music box (3/4), lo-fi Rhodes + soft hip-hop beat, harp + cello drone, marimba + bossa shaker, glass-bowl ambient with heartbeat pulse._
 
