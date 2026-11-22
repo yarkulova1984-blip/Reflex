@@ -102,12 +102,12 @@ CLIPS = {"c1": "c1-feet-tingling.mp4", "c2": "c2-zarina-foot.mp4", "c3": "c3-glu
 STILLS = {"hook": ("client-phone.png", (0, 60, 660, 1233)),
           "pancreas": ("pancreas.png", (40, 380, 560, 1304)),
           "stress": ("client-phone.png", (0, 60, 660, 1233)),
-          "chart": ("chart.png", (0, 0, 941, 1672)),
+          "chart": ("chart-v2.png", (110, 0, 974, 1536)),
           "towel": ("towel.png", (0, 0, 941, 1672)),
           "portrait": ("portrait.png", (100, 0, 800, 1244))}
 CAMS = {"hook": (0.5, 0.42, 1.0, 1.07), "pancreas": (0.5, 0.36, 1.02, 1.20), "stress": (0.45, 0.55, 1.12, 1.30),
         "chart": (0.72, 0.36, 1.00, 1.16), "towel": (0.5, 0.45, 1.08, 1.0), "portrait": (0.5, 0.40, 1.0, 1.06)}
-PANC_CHART = (748, 482)      # highlighted pancreas reflex on chart.png (reflexology concept)
+PANC_CHART = (792, 437)      # highlighted pancreas reflex on chart-v2.png (owner's v2: anatomically correct hand) (reflexology concept)
 
 
 def build_still(key):
